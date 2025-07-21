@@ -158,3 +158,8 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 - active data can stored on ManGO (for KUL and those linked to it)
 - raw data should be deposited on institutional archive or external archive (EMPIAR and Bioimage archive)
 
+## Course to follow 
+- github course at vib
+- Mango course at VSC and RDM at vib
+- look for a datasteward (Datacore or ICTS)
+
