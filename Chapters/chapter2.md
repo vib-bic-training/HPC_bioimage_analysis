@@ -109,19 +109,9 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 - `BioImage archive`
 ---------------------------------------------------
 
-## Research data management
-### ManGO
-ManGO is developped by KU Leuven as a middelware on the top of iRODS (an open source data management software). 
-ManGO is data agnostic and used in different fields (exact science, life science, humanities) and implemented on VSC, University of Wageningen and National Cancer institute in the Netherlands.
-Thanks to ManGO, the metadata can be extracted automatically through workflows, the metadata can be added through schema and archived with ease.  
-### DataHub
-Solution provided by Elixir and VIB (for more info, contact Datacore)
-### GitHub
-Code should shared on GitHub (Bic code, Bic training and ...)
 
 <!-- style="color: magenta ;" --> 
 
-#  NEW ADDS MERGING FILES NEED TO BE CHECKED
 
 ## Steps
 
@@ -134,7 +124,7 @@ Code should shared on GitHub (Bic code, Bic training and ...)
 5. Accept Information to be Provided to Service (always or one time only) and click on Accept
 6. Globus App File Manager will be displayed in the browser tab.
 7. Follow Globus file transfer [tutorial](https://vlaams-supercomputing-centrum-vscdocumentation.readthedocs-hosted.com/en/latest/globus/managing_and_transferring_files.html#globus-collections-and-endpoints)
-8. Use **VSC UGent Tier1 projects** as endpoint and the exact name of the project is "starting_2023_001"
+8. Use **VSC UGent Tier1 projects** as endpoint and the exact name of the project is "2024_300"
 
 ![image](https://user-images.githubusercontent.com/1775952/213488568-e32e144b-d017-4996-85c8-aa82b1266340.png)
 
@@ -149,7 +139,7 @@ Code should shared on GitHub (Bic code, Bic training and ...)
 10. You can store data at different places, for example:
 - /dodrio/scratch/users/$VSC_NUMBER/Desktop (= $VSC_SCRATCH/Desktop)
 - /dodrio/scratch/users/$VSC_NUMBER/ondemand (= $VSC_SCRATCH/ondemand)
-- /dodrio/scratch/project/starting_2023_001 (= $VSC_SCRATCH_PROJECTS_BASE/starting_2023_001)
+- /dodrio/scratch/project/2024_300 (= $VSC_SCRATCH_PROJECTS_BASE/2024_300)
 
 ![image](https://user-images.githubusercontent.com/1775952/213489574-493782a0-724e-4c2c-9d44-97b6e20d3f62.png)
 
@@ -162,4 +152,4 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 12. Other endpoints:
 - VSC KU Leuven tier2 scratch (Tier-2 KUL): /scratch/xxx/vscxxxyy
 - VSC UGENT Tier2 filesystem (Tier-2 UGent): /scratch/gent
-- VIB projects share /sxx/name_folder (sxx=02 for BIC_G, 03 for BIC_L, S00 for training and S20 for DC)
+
