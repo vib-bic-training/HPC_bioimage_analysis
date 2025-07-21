@@ -81,6 +81,8 @@ Once you are logged in, you should see this page:
 
 **connecting at Tier1 instance of VSC**
 
+## 2. Install globus personnal connector on your pc (to do)
+
 All good, you can get started!
 
 
