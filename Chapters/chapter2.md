@@ -158,6 +158,10 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 - active data can stored on ManGO (for KUL and those linked to it)
 - raw data should be deposited on institutional archive or external archive (EMPIAR and Bioimage archive)
 
+## Alternative to Globus
+- using CLI (scp or sftp) and a terminal (https://docs.hpc.ugent.be/macOS/connecting/)
+- using WinSCP (https://winscp.net/eng/download.php)
+
 ## Course to follow 
 - github course at vib
 - Mango course at VSC and RDM at vib
