@@ -52,7 +52,7 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 # Chapter 3 : BAND 
 
 
-## Start BAND:
+## 3.1 Start BAND:
 
 1. Connect to https://tier1.hpc.ugent.be
 2. Go to `My Interactive Sessions `
@@ -87,7 +87,7 @@ Most of the pre-installed software are accessible via the Menu `Application › 
 | qupath| qupath + ...|
 | ilastik| ...|
 
-## Napari
+## 3.2 Napari
 
 ### 1- Napari devbio
 
@@ -261,7 +261,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# Chapter 4 - BAND, BioImage Analysis (non-Napari)
+## 3.3 QuPath
 
 > [!TIP]
 > DISCLAIMER
@@ -318,7 +318,7 @@ Image are located in `/dodrio/scratch/projects/2024_300/training/qupath/`
  'copy/paste')
  
 
-## CellPose
+## 3.4 CellPose
 
 #### Start
 Start it via the menu `Applications › Bioimage analysis › CellPose 2.2.2 CUDA`
@@ -490,7 +490,7 @@ This will save the result into the input directory.
 [previous chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter05.md)
 
 
-## Ilastik ?
+## 3.5 Ilastik ?
 
 
 
