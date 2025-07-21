@@ -26,7 +26,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-## Data transfer
+# Data transfer
 
 There some different way to transfer data in and out of the CLuster. But the safest way to transfer big chunks of data is using Globus.
 ​Globus is a research cyberinfrastructure, developed and operated as a not-for-profit service by the University of Chicago.
@@ -36,7 +36,7 @@ In addition, several repositories such EMPIAR or Bioimage archive are using or i
 Globus can execute through a webinterface or through commandline, with/without human interaction.
 There is a general session and one session approaching some specifics for Bioimaging.
 
-### Globus setup 
+## Globus setup 
 
 
 Authentification 
@@ -61,11 +61,11 @@ Installation globus personnal connector
 
 .... 
 
-####  Transferring to active storage (VSC)
+###  Transferring to active storage (VSC)
 
 <!-- style="color: magenta ;" --> Intro or image to be added
 
-##### From your computer to active storage (VSC)
+#### From your computer to active storage (VSC)
 
 1. After authentification,  Globus App File Manager will be displayed in the browser tab.
 2. Follow Globus file transfer [tutorial](https://vlaams-supercomputing-centrum-vscdocumentation.readthedocs-hosted.com/en/latest/globus/managing_and_transferring_files.html#globus-collections-and-endpoints)
@@ -113,7 +113,7 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 <!-- style="color: magenta ;" --> 
 
 
-## Steps
+## How to connect and transfer data with Globus with the webportal
 
 **$\textcolor{red}{\textsf{Warning}}$** : via the web interface, you can only download one file at a time, see [VSC & globus](https://docs.vscentrum.be/en/latest/globus/using_globus_via_web.html)
 
@@ -152,4 +152,9 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 12. Other endpoints:
 - VSC KU Leuven tier2 scratch (Tier-2 KUL): /scratch/xxx/vscxxxyy
 - VSC UGENT Tier2 filesystem (Tier-2 UGent): /scratch/gent
+
+## Where to put your data and your code (RDM)
+- code should go on your group/ lab github| gitlab
+- active data can stored on ManGO (for KUL and those linked to it)
+- raw data should be deposited on institutional archive or external archive (EMPIAR and Bioimage archive)
 
