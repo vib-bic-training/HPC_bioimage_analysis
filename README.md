@@ -107,7 +107,7 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 
 <section>
 
-<img src="images/bioimaging_analysis_hpc_workshop_.png" width="650" height="606" align="center"/>
+<img src="https://github.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/blob/main/images/bioimaging_analysis_hpc_workshop_.png" width="650" height="606" align="center"/>
 
 ## General context
 
