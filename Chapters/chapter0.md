@@ -83,6 +83,29 @@ Once you are logged in, you should see this page:
 
 ## 2. Install globus personnal connector on your pc (to do)
 
+### Windows
+
+- download globus personnal connector and follow the next steps: https://docs.globus.org/globus-connect-personal/install/windows/
+- install globuspersonnal connector in a place where you have admin rights or check if it is white listed by your local IT
+### Linux
+
+All the documentation can be found here: https://docs.globus.org/globus-connect-personal/install/linux/
+
+- open a terminal and follow the next steps
+```bash
+# you need admin rights to do the following steps
+sudo apt-get install tk tcllib
+cd Downloads
+wget https://downloads.globus.org/globus-connect-personal/linux/stable/globusconnectpersonal-latest.tgz
+mv Downloads/globusconnectpersonal-latest.tgz Documents/
+cd Documents
+tar xzf globusconnectpersonal-latest.tgz
+# replace `x.y.z` in the line below with the version number you see
+cd globusconnectpersonal-x.y.z
+./globusconnectpersonal
+```
+- Then you can login and use the globus portal
+
 All good, you can get started!
 
 
