@@ -366,8 +366,8 @@ Table for jupyter notebook
  How to see what is loaded with the module:
  ``` ml show  IPython/8.5.0-GCCcore-11.3.0 ```
 
-#### Modules for bioimage analysis in python
-1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b
+#### Modules for bioimage analysis 
+1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b, napari/0.4.18-foss-2022a, napari/0.4.18-foss-2022a
 2. [Cellpose](https://github.com/MouseLand/cellpose): Cellpose/2.2.2-foss-2022a or Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
 3. Omnipose:  Omnipose/0.4.4-foss-2022a-CUDA-11.7.0 or  Omnipose/0.4.4-foss-2022a
 4. [stardist](https://github.com/stardist/stardist): stardist/0.8.3-foss-2021b-CUDA-11.4.1 or stardist/0.8.3-foss-2021b
@@ -388,9 +388,6 @@ Table for jupyter notebook
 3. Squidpy: Squidpy/1.2.2-foss-2021b
 4. [Giotto](https://drieslab.github.io/Giotto/): Giotto-Suite/3.0.1-foss-2022a-R-4.2.1
 
-#### Module for bio-image analysis tools
-1. Fiji: Fiji/2.9.0-Java-1.8
-2. Cellprofiler: CellProfiler/4.2.4-foss-2021a
 
 #### General libraries 
 1. Scikit-learn: scikit-learn/1.1.2-foss-2022a or scikit-learn/1.0.1-foss-2021b
