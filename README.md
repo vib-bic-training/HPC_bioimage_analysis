@@ -123,16 +123,24 @@ The **presentation** which goes alongside this material can be found [here](http
 
 Schedule:
 
+-Day 1:
 - 09:30 - Introduction
 - 10:00 - HPC infrastucture
 - 10:30 - Coffee Break
 - 10:45 - Data Transfer
-- 11:15 - Napari
-- 12:15 - Lunch
+- 11:15 /11:00 - Napari
+- 12:15/12:00 - Lunch
 - 13:15 - Napari plugins
 - 14:30 - Coffee break
-- 14:45 - Jupyter notebooks
+- 14:45 - Other software + intro notebook?
 - 17:00 - End of the day
+
+- Day 2
+- 09:30 - usage of notebooks
+- 10:45 - Coffee Break
+- 11:00 demo
+- 11:45 wrap up
+- 12:00 End of the day
 </section>
 
 # Lesson overview
