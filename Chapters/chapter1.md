@@ -108,8 +108,7 @@ NB: There are two additional two clusters called `cpu_rome_all` and `gpu_rome_a1
 - `gpu_rome_a100_all` corresponds to a combination of `gpu_rome_a100_40` and `gpu_rome_a100_80`.
 
 
-Filesystems specifics
----------------------------
+#### Filesystems specifics
 
 | Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space ** |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -123,10 +122,7 @@ Filesystems specifics
 > Source : https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects
 > For more information on the different partitions: https://docs.vscentrum.be/en/latest/gent/tier1_hortense.html#general-information
 
----------------------------------------------
-
-Check the quota
----------------------
+#### Check the quota
 
 `my_dodrio_quota`
 
@@ -144,16 +140,10 @@ Disk quotas for prj 2641240 (pid 2641240):
 
 On Tier1, `my_dodrio_quota` give the space available on the `$VSC_SCRATCH` (first result) and on the one on our project (in that case `/dodrio/scratch/projects/2024_300/`)
 
----------------------------------------------------------
 
+### UGent TIER 2
 
-#### UGent TIER 2
-
- `show_quota` or go to https://account.vscentrum.be for a general overview
-
-
-Filesystems specifics
----------------------------
+#### Filesystems specifics
 
 | Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*) |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -165,15 +155,15 @@ Filesystems specifics
 
 > Source : https://docs.vscentrum.be/en/latest/gent/tier2_hardware.html?highlight=VSC_DATA#shared-storage
 
-----------------------------------------------
+#### Check the quota
+ `show_quota` or go to https://account.vscentrum.be for a general overview
 
 
 ### KULeuven VSC
 
 If for your training session you are using the [KULeuven section](https://docs.vscentrum.be/leuven/genius_quick_start.html#access-to-the-cluster) of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that your group is in a list of people with priorities for a reserved cluster. As you read this you can imagine that there is not only cluster option you can use. Different clusters will have different computational powers, therefore, depending on what you will do you can choose the one that most suits you.
 
-Overview KULeuven-VSC 
--------------
+#### Overview
 
 <!-- style="color: magenta" --> To update
 
@@ -182,10 +172,9 @@ Overview KULeuven-VSC
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |Tier 2 Leuven | login.hpc.kuleuven.be | yes | yes | none |
 
-Clusters specifics at KULeuven - VSC
------------------------------------
+#### Tier 2 KUL Clusters
 
-#### Tier 2 KUL Genius
+#### Genius
 
 | Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB) |
 | --- | --- | --- | --- | --- |
@@ -198,7 +187,7 @@ Clusters specifics at KULeuven - VSC
 
 -----------------------------------------------
 
-####  Tier 2 KUL wICE
+####  wICE
 
 | Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB) |
 | --- | --- | --- | --- | --- |
@@ -211,8 +200,7 @@ Clusters specifics at KULeuven - VSC
 | interactive and gpu_a100_debug | 512 | 960 GB SSD | 1 NVIDIA A100 | 80 |
 
 
-Filesystems specifics
----------------------------
+#### Filesystems specifics
 
 | Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*) |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -231,17 +219,10 @@ Filesystems specifics
 
 > Source : https://docs.vscentrum.be/en/latest/leuven/tier2_hardware/kuleuven_storage.html?highlight=VSC_DATA#ku-leuven-storage
 
------------------------------------------------------------------
-
-
-Projects and reservation for Tier-2 KU Leuven
------------------------------------------------
+#### Projects and reservation for Tier-2 KU Leuven
 
 Running calculations on Tier-2 KU Leuven requires credits. New users obtained 2 millions free credits (introduction) that are valid during 6 months.
 Credits can be obtained through various type of research projects (through university, FWO, EU level). Subset of Tier-2 KUL can be reserved for research events or training events.
-
--------------------------------------------------
-
 
 ## Introduction to HPC
 
