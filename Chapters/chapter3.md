@@ -73,7 +73,7 @@ The selection of the cluster (using or not using GPU), of the time and the numbe
 
 ## Access to the pre-install software
 
-Most of the pre-installed software are accessible via the Menu `Application › BioImage Analysis › ...
+Most of the pre-installed software are accessible via the Menu `Application › BioImage Analysis › ...`
 ![Menu BioImage Analysis](/images/napari/00_application_bioimage_analysis_menu.png 'Menu BioImage Analysis')
 
 | Name    | Application |
