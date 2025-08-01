@@ -260,18 +260,10 @@ The European model for HPC consists of three levels of computing capacity:
 > - Tier-1 cloud (virtual machines and etc...)
 > - Tier-1 compute (calculations, access through terminal or through graphical user interface through Open On Demand)
 
-## Creating a job
 
-<!-- style="color: magenta ;" --> To be developed
+## Installed software
 
-- There is several queues for different kind of jobs (memory, presence or absence gpus, test queues)
-- Reservation (fast queue with reservation flag for training)
-- Talk about documentation and how to navigate 
-
-
-### Installed software
-
-#### Easy build modules
+#### EasyBuild Modules
 
 From a terminal (or from a Jupyter notebook, add a `!` to use this command)
 
@@ -312,7 +304,7 @@ module purge
 
 🗎 https://docs.vscentrum.be/software/software_stack.html#using-the-module-system
 
-#### How to load module in jupyter notebook
+#### Load module in jupyter notebook
 Select the appropriate version of the jupyter notebook and load the easy build module accordingly
 
 ![image](../images/Chapter01_jupyter.png)
@@ -347,7 +339,9 @@ Table for jupyter notebook
  How to see what is loaded with the module:
  ``` ml show  IPython/8.5.0-GCCcore-11.3.0 ```
 
-#### Modules for bioimage analysis 
+#### Module List
+
+##### Modules for bioimage analysis 
 1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b, napari/0.4.18-foss-2022a, napari/0.4.18-foss-2022a
 2. [Cellpose](https://github.com/MouseLand/cellpose): Cellpose/2.2.2-foss-2022a or Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
 3. Omnipose:  Omnipose/0.4.4-foss-2022a-CUDA-11.7.0 or  Omnipose/0.4.4-foss-2022a
@@ -363,14 +357,14 @@ Table for jupyter notebook
 13. Cellprofiler: CellProfiler/4.2.4-foss-2021a
 14. Fiji: Fiji/2.9.0-Java-1.8
 
-#### Module for spatial omics in python
+##### Module for spatial omics in python
 1. [Scanpy](https://github.com/scverse/scanpy): scanpy/1.9.1-foss-2021b
 2. Seurat: Seurat/4.3.0-foss-2021b-R-4.1.2
 3. Squidpy: Squidpy/1.2.2-foss-2021b
 4. [Giotto](https://drieslab.github.io/Giotto/): Giotto-Suite/3.0.1-foss-2022a-R-4.2.1
 
 
-#### General libraries 
+##### General libraries 
 1. Scikit-learn: scikit-learn/1.1.2-foss-2022a or scikit-learn/1.0.1-foss-2021b
 2. Scikit-image: scikit-image/0.19.3-foss-2022a or scikit-image/0.19.1-foss-2021b
 3. scipy: SciPy-bundle/2022.05-foss-2022a, SciPy-bundle/2021.10-foss-2021b
@@ -382,6 +376,15 @@ Table for jupyter notebook
 9. Jupyter notebook: JupyterLab/3.1.6-GCCcore-11.2.0
 10. Matplotlib: matplotlib/3.5.2-foss-2022a or matplotlib/3.4.3-intel-2021b
 11. Bioconductor:  R-bundle-Bioconductor/3.14-foss-2021b-R-4.1.2
+
+
+## Creating a job
+
+<!-- style="color: magenta ;" --> To be developed
+
+- There is several queues for different kind of jobs (memory, presence or absence gpus, test queues)
+- Reservation (fast queue with reservation flag for training)
+- Talk about documentation and how to navigate 
 
 [Chapters List](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/README.md#5) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md)
 
