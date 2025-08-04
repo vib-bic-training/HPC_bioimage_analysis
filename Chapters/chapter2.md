@@ -26,7 +26,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-# Data transfer
+# Chapter2: Data transfer
 
 There some different way to transfer data in and out of the CLuster. But the safest way to transfer big chunks of data is using Globus.
 ​Globus is a research cyberinfrastructure, developed and operated as a not-for-profit service by the University of Chicago.
