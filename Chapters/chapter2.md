@@ -165,5 +165,4 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 ## Course to follow 
 - github course at vib
 - Mango course at VSC and RDM at vib
-- look for a datasteward (Datacore or ICTS)
 
