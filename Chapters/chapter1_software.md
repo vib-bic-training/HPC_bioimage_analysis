@@ -49,7 +49,7 @@ workshop_edition: 1st
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 -->
 
-# Installed software: EasyBuild Modules
+# Chapter x: Installed software
 
 ## General linux command
 
