@@ -1,7 +1,7 @@
 <!--
 
 author:   Pavie Benjamin, Tatiana Woller
-email:    benjamin.pavie@vib.de
+email:    benjamin.pavie@vib.be, tatiana.woller@vib.be
 version:  2.0.0
 language: en
 narrator: UK English Female
@@ -94,41 +94,40 @@ module purge
 
 
 ## Modules for bioimage analysis 
-1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b, napari/0.4.18-foss-2022a, napari/0.4.18-foss-2022a
-2. [Cellpose](https://github.com/MouseLand/cellpose): Cellpose/2.2.2-foss-2022a or Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
-3. Omnipose:  Omnipose/0.4.4-foss-2022a-CUDA-11.7.0 or  Omnipose/0.4.4-foss-2022a
-4. [stardist](https://github.com/stardist/stardist): stardist/0.8.3-foss-2021b-CUDA-11.4.1 or stardist/0.8.3-foss-2021b
-5. [AICSImageIO](https://github.com/AllenCellModeling/aicsimageio) : AICSImageIO/4.14.0-foss-2022a
-6. [devbio-napari](https://github.com/haesleinhuepf/devbio-napari) : devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0
-7. [n2v](https://github.com/juglab/n2v) : n2v/0.3.2-foss-2022a-CUDA-11.7.0
-8. Monai: MONAI/1.0.1-foss-2022a
-9. Napari-denoiseg:napari-denoiseg/0.0.1-foss-2023a
-10. Napari-microsam: micro-sam/1.0.1-foss-2023a
-11. Napari empanada:empanada-napari/1.1.0-foss-2023a
-12. QuPath: QuPath/0.5.0-GCCcore-12.3.0-Java-17
-13. Cellprofiler: CellProfiler/4.2.4-foss-2021a
-14. Fiji: Fiji/2.9.0-Java-1.8
-
-## Module for spatial omics in python
-1. [Scanpy](https://github.com/scverse/scanpy): scanpy/1.9.1-foss-2021b
-2. Seurat: Seurat/4.3.0-foss-2021b-R-4.1.2
-3. Squidpy: Squidpy/1.2.2-foss-2021b
-4. [Giotto](https://drieslab.github.io/Giotto/): Giotto-Suite/3.0.1-foss-2022a-R-4.2.1
+1. [Napari](https://github.com/napari/napari): Napari/0.4.15-foss-2021b, napari/0.4.18-foss-2022a, napari/0.4.18-foss-2022a,  napari/0.4.18-foss-2023a
+2. [Napari empanada](https://empanada.readthedocs.io/en/latest/): empanada-napari/1.1.0-foss-2023a
+3. [Napari devbio](https://github.com/haesleinhuepf/devbio-napari): devbio-napari/0.10.1-foss-2022a-CUDA-11.7.0, devbio-napari/0.10.1-foss-2022a, empanada-napari/1.1.0-foss-2023a
+4. [Napari microsam](https://github.com/computational-cell-analytics/micro-sam):micro-sam/1.0.1-foss-2023a
+5. [napari ilastik](): ilastik-napari/0.2.4-foss-2023a
+6. [Napari denoiseg]():napari-denoiseg/0.0.1-foss-2023a
+7. [n2v](https://github.com/juglab/n2v):n2v/0.3.2-foss-2022a-CUDA-11.7.0, n2v/0.3.2-foss-2022a, n2v/0.3.3-foss-2023a
+8. [Cellpose](https://github.com/MouseLand/cellpose): Cellpose/2.2.2-foss-2022a or Cellpose/2.2.2-foss-2022a-CUDA-11.7.0
+9. Omnipose:  Omnipose/0.4.4-foss-2022a-CUDA-11.7.0 or  Omnipose/0.4.4-foss-2022a
+10. [stardist](https://github.com/stardist/stardist): stardist/0.8.3-foss-2021b-CUDA-11.4.1 or stardist/0.8.3-foss-2021b
+11. [AICSImageIO](https://github.com/AllenCellModeling/aicsimageio) : AICSImageIO/4.14.0-foss-2022a
+12. Tiffile: tifffile/2023.7.18, tifffile/2024.6.18
+13. Monai: MONAI/1.0.1-foss-2022a
+14. QuPath: QuPath/0.5.0-GCCcore-12.3.0-Java-17
+15. Cellprofiler: CellProfiler/4.2.4-foss-2021a
+16. Fiji: Fiji/2.9.0-Java-1.8
+17. Zarr:  zarr/2.17.1-foss-2023a, zarr/2.13.3-foss-2022a, zarr/2.13.3-foss-2021b
+18. Empanada: empanada-dl-0.1.7
 
 
 ## General libraries 
-1. Scikit-learn: scikit-learn/1.1.2-foss-2022a or scikit-learn/1.0.1-foss-2021b
-2. Scikit-image: scikit-image/0.19.3-foss-2022a or scikit-image/0.19.1-foss-2021b
-3. scipy: SciPy-bundle/2022.05-foss-2022a, SciPy-bundle/2021.10-foss-2021b
-4. seaborn: Seaborn/0.11.2-foss-2021b
-5. tifftile: Scikit-image/0.19.1-foss-2021b 
-6. tensorflow: TensorFlow/2.7.1-foss-2021b-CUDA-11.4.1 or TensorFlow/2.7.1-foss-2021b
-7. R : R/4.2.1-foss-2022a or R/4.0.0-foss-2020a
-8. R studio: RStudio-Server/1.3.959-foss-2020a-Java-11-R-4.0.0 
-9. Jupyter notebook: JupyterLab/3.1.6-GCCcore-11.2.0
-10. Matplotlib: matplotlib/3.5.2-foss-2022a or matplotlib/3.4.3-intel-2021b
-11. Bioconductor:  R-bundle-Bioconductor/3.14-foss-2021b-R-4.1.2
-
+1. Scikit-learn: scikit-learn/1.1.2-foss-2022a or scikit-learn/1.0.1-foss-2021b or scikit-learn/1.4.0-gfbf-2023b or scikit-learn/1.4.2-gfbf-2023a
+2. Scikit-image: scikit-image/0.19.3-foss-2022a or scikit-image/0.19.1-foss-2021b or scikit-image/0.22.0-foss-2023a
+3. scipy: SciPy-bundle/2022.05-foss-2022a, SciPy-bundle/2021.10-foss-2021b or SciPy-bundle/2023.02-gfbf-2022b , SciPy-bundle/2023.07-gfbf-2023a, SciPy-bundle/2023.11-gfbf-2023b, SciPy-bundle/2024.05-gfbf-2024a
+4. seaborn: Seaborn/0.11.2-foss-2021b or Seaborn/0.12.1-foss-2022a or Seaborn/0.13.2-gfbf-2023a or  Seaborn/0.13.2-gfbf-2023b
+5. tensorflow: TensorFlow/2.7.1-foss-2021b-CUDA-11.4.1 or TensorFlow/2.7.1-foss-2021b or TensorFlow/2.15.1-foss-2023a-CUDA-12.1.1
+   - there are many flavours of tensorflow: estimator, probability, to see them all use: module spider tensorflow)
+6. pytorch:  PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
+- there are many flavours of pytorch: geometric, lightning, ignite, to see them all: module spider pytorch)
+7. Jupyter notebook: JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0 or  JupyterNotebook/7.0.2-GCCcore-12.3.0 or JupyterNotebook/7.0.3-GCCcore-12.2.0 or JupyterNotebook/7.2.0-GCCcore-13.2.0
+8. Jupyterlab: JupyterLab/4.2.0-GCCcore-13.2.0 or JupyterLab/4.0.5-GCCcore-12.3.0 or  JupyterLab/4.0.3-GCCcore-12.2.0 or JupyterLab/3.5.0-GCCcore-11.3.0
+9. Matplotlib: matplotlib/3.5.2-foss-2022a or matplotlib/3.4.3-intel-2021 or matplotlib/3.7.2-gfbf-2023a or matplotlib/3.8.2-gfbf-2023b or matplotlib/3.9.2-gfbf-2024a
+   
+nota bene: R and matlab  modules are also available
 
 [Chapters List](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/README.md#5) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md)
 
