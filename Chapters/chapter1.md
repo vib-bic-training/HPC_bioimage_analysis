@@ -66,7 +66,7 @@ _
 
 >> _
 >>
->> In this course we will detail more the resources of UGent, KULeuven and VIB instances.
+>> In this course we will detail more the resources of UGent (Tier1).
 >>
 >> However all along we will try to explain the building blocks allowing you easily understand and adapt to other HPC instances.
 >>
