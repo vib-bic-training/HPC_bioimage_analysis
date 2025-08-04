@@ -1,8 +1,8 @@
 <!--
 
-author:   Pavie Benjamin, Tatiana Woller
-email:    benjamin.pavie@vib.de
-version:  2.0.0
+author:   Tatiana Woller, Bruna Piereck, Alexander Botzki
+email:    trainingandconferences@vib.be
+version:  1.0.0
 language: en
 narrator: UK English Female
 
@@ -24,73 +24,63 @@ link:     https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&disp
 link:     https://fonts.googleapis.com/css2?family=Open+Sans&display=swap
 link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vib-styles.css
 
-tutor:    VIB
-edition:  1st 
-workshop_name:     Bioimaging data analysis on HPC
-workshop_edition: 1st
-
-@JSONLD
-<script run-once>
-  let json = @0 
-
-  const script = document.createElement('script');
-  script.type = 'application/ld+json';
-  script.text = JSON.stringify(json);
-
-  document.head.appendChild(script);
-
-  // this is only needed to prevent and output,
-  // as long as the result of a script is undefined,
-  // it is not shown or rendered within LiaScript
-  console.debug("added json to head")
-</script>
-@end
-
-orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
--->
-# Chapter 1 : Infrastructure
-
-Check here what are the clusters available in each section of the VSC. You can see the names and some of the resources linked to each of them. This might not make much difference for you now, but is very useful when you wan to optimize your analysis and pipelines.
-
-Sending a job into an appropriate cluster can make the difference in how much time you wait in the "line" and how much memory you will have available for example.
+@orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
 
-## Introduction to HPC
+# What is a High-Performance Computing system ?
 
-High performance computing (HPC) is a technology that uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
+A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly. A HPC uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
 
-HPC is extremely valuable for fields where deep-learning and machine learning algorithms are daily routine for example.
+Among the technologies intergated in a HPC system it can include
 
-The European model for HPC consists of three levels of computing capacity:
+**High-end compute nodes:** multicore processors.
 
-1. When available at research institutions its called Tier-2.
+**Fast interconnect:** multiple processor cores work together through parallel processing. Fast connections between the nodes are necessary to make quick data exchange possible.
 
-2. When provided at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs its called Tier-1.
+**Parallel shared filesystem:** the compute nodes are connected to a shared filesystem for storing input data, temporary data, and final calculation results.
 
-3. When available at EU level, with **very** large-scale computing infrastructure, its called Tier-0.
+**High-memory nodes:** some nodes are equipped with lots of RAM memory, mitigating low disk reads impacting analysis that generate large amounts of intermediary results.
 
-**By contrast, Tier-3 corresponds to single computers (your own infrastructure)**
+**GPU (Graphical processing units) nodes:** are specialized processors, ideally suited for higly demanding data processing tasks.
 
 
-> Flemish super computing centre (VSC)
->
-> REF: https://www.vscentrum.be/about
-> The Flemish Supercomputing Centre (_Vlaams Supercomputer Center_) is a collaboration between the five universities in Flanders
-> - VUB
-> - KU Leuven
-> - UGent
-> - UHasselt
-> - UAntwerpen). 
-> [replace with the logo of each university for a better visual]
->
->The VSC has developed a differentiated infrastructure (Tier-1 and Tier-2 level) that is available to the academic and business world. 
-> Researchers of those universities can get access to Tier-2 infrastructures through their university for free or for a preferential prices.
-> In addition, access to Tier-1 infrastructures is allocated through project grants.
-> The Tier-1 services encompass :
-> - Tier-1 data (active storage and RDM)
-> - Tier-1 cloud (virtual machines and etc...)
-> - Tier-1 compute (calculations, access through terminal or through graphical user interface through Open On Demand)
+# Infrastructure
 
+The european model for HPC classifies that different offers in HPC resource and accessibility in different levels called **Tiers**.
+
+_ 
+
+<img src="../images/tierEuropeanHPCsytem.svg" width="500"/>
+
+_ 
+
+* **Tier-0** clusters are ***Very large*** computing infrastructure available at EU level, for example [PRACE association](https://prace-ri.eu/prace-association/) (Partnership for advanced computing in Europe) has [6 partners](https://prace-ri.eu/prace-archive/infrastructure-support/prace-hpc-infrastructure/) offering a Tier-0 cluster. Belgium is not hosting a Tier-0 but is one of ~25 member in PRACE.
+
+* **Tier-1** clusters are clusters with services at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs. For example in the [VSC (Vlaams supercomputer centrum)](https://www.vscentrum.be/compute) there is [Hortense](https://www.vscentrum.be/compute), the Tier-1 computer cluster hosted by UGent university 
+
+* **Tier-2** clusters are available at research institutions level. There are [4 Tier-2 cluster in flandres](https://docs.vscentrum.be/hardware-tier2.html#), hosted bu the universities UAntwerp, VUB, UGent and KULeuven.
+
+* **Tier-3** is representing your personal computer, can be a desktop or a laptop. But is mainly for personal use and has limited resources.
+
+
+>> _
+>>
+>> In this course we will detail more the resources of UGent, KULeuven and VIB instances.
+>>
+>> However all along we will try to explain the building blocks allowing you easily understand and adapt to other HPC instances.
+>>
+>> _
+
+## Storage and Computer Nodes systems
+
+A HPC needs different types of storage to maintain the efficience of its vast and complex infrastructure. Each instace will possibly name them differently, but they have defined purposes that you need to take in account when using their environmet. On top of the filesystem, each node will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
+
+It means that the files and storage systems in place **will vary**. Knowing this what storages, their purpose and maintanance will be important to understand ***how*** and ***where*** to keep, analyze and backup your data. Additionlly, as you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
+
+Generally is good to keep in mind that when you connect to the HPC, the area you start at is like the hall of a house, you should not keep too many things there or do tasks in this location. You will also have a long-term storage, where you can keep your data, but also not where your tasks will be done. Last you will have a temporary large storage place that can be access when using your tasks
+
+
+<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
 ## UGent TIER 1
 <!-- style="color: magenta" --> VO = virtual organization
