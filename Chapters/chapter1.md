@@ -54,43 +54,58 @@ Check here what are the clusters available in each section of the VSC. You can s
 
 Sending a job into an appropriate cluster can make the difference in how much time you wait in the "line" and how much memory you will have available for example.
 
-## UGent VSC
+
+## Introduction to HPC
+
+High performance computing (HPC) is a technology that uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
+
+HPC is extremely valuable for fields where deep-learning and machine learning algorithms are daily routine for example.
+
+The European model for HPC consists of three levels of computing capacity:
+
+1. When available at research institutions its called Tier-2.
+
+2. When provided at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs its called Tier-1.
+
+3. When available at EU level, with **very** large-scale computing infrastructure, its called Tier-0.
+
+**By contrast, Tier-3 corresponds to single computers (your own infrastructure)**
+
+
+> Flemish super computing centre (VSC)
+>
+> REF: https://www.vscentrum.be/about
+> The Flemish Supercomputing Centre (_Vlaams Supercomputer Center_) is a collaboration between the five universities in Flanders
+> - VUB
+> - KU Leuven
+> - UGent
+> - UHasselt
+> - UAntwerpen). 
+> [replace with the logo of each university for a better visual]
+>
+>The VSC has developed a differentiated infrastructure (Tier-1 and Tier-2 level) that is available to the academic and business world. 
+> Researchers of those universities can get access to Tier-2 infrastructures through their university for free or for a preferential prices.
+> In addition, access to Tier-1 infrastructures is allocated through project grants.
+> The Tier-1 services encompass :
+> - Tier-1 data (active storage and RDM)
+> - Tier-1 cloud (virtual machines and etc...)
+> - Tier-1 compute (calculations, access through terminal or through graphical user interface through Open On Demand)
+
+
+## UGent TIER 1
+<!-- style="color: magenta" --> VO = virtual organization
 
 If for your training session you are using the [UGent section]((https://docs.vscentrum.be/gent/tier2_hardware.html) or Tier1 of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that you will be using the GPU cluster and debug cluster through the. As you can imagine this is not the only cluster you can use, but for trai is good to have an interactive session in order to understand how it is working.
-
-<!-- style="color: #7CA1CC;" --> Each section of the **VSC** has independent managing systems. 
 
 It means that the files and storage systems in place **will vary**. Knowing this details will be important to understand ***how*** and ***where*** to keep , analyze and backup your data.
 
 As you probably already guessed, there is a difference if we are talking about personal use and project wise. Specific projects might request specific resources and will define who can access it.
 
-### Overview UGent VSC
-<!-- style="color: magenta" --> VO = virtual organization
 
 | Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
-|Tier 2 Ghent | login.hpc.ugent.be |yes|yes|none|
 
-### UGent VSC Clusters
-
-On top of the filesystem, each clusters will have different computational powers, therefore, depending on your needs, you can choose the one that most suits you.
-
-| Cluster name  | Memory (GiB) | Disk space  |  GPU |
-|---|---|---|---|
-| swalot | 116 | 1 TB | - |
-| skitty | 177 | 1 TB + 240 GB SSD | - |
-| victini | 88 | 1 TB + 240 GB SSD | - |
-| joltik | 256 | 800 GB SSD | 4 NVIDIA V100 |
-| doduo | 250 | 180 GB SSD | - |
-| accelgor | 500 | 180 GB SSD | 4 NVIDIA A100 |
-| donphan ** | 738 | 1.6 TB NVME | 1 shared NVIDIA Ampere A2 |
-| gallade | 940 | 1.5 TB NVME | - |
-
-\** [debugging cluster (Used for debugging and training)](https://docs.hpc.ugent.be/Linux/interactive_debug/)
-
-
-### UGent TIER 1
 
 | Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
 | --- | --- | --- | --- | --- |
@@ -141,124 +156,6 @@ Disk quotas for prj 2641240 (pid 2641240):
 On Tier1, `my_dodrio_quota` give the space available on the `$VSC_SCRATCH` (first result) and on the one on our project (in that case `/dodrio/scratch/projects/2024_300/`)
 
 
-### UGent TIER 2
-
-#### Filesystems specifics
-
-| Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*) |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| $VSC_HOME | Home directory, entry point to the system | 51 TB | 3GB (fixed) | ❌ |
-| $VSC_DATA | Long-term storage of large data files | 1.8 PB | 25GB (fixed) | 250GB |
-| $VSC_SCRATCH | Temporary fast storage of ‘live’ data for calculations | 1.9 PB | 25GB (fixed) | 250GB |
-| $VSC\_SCRATCH\_ARCANINE | Temporary very fast storage of ‘live’ data for calculations (recommended for very I/O-intensive jobs) | 70 TB  | (none) | upon request |
-(*) Storage space for a group of users (Virtual Organisation or VO for short) can be increased significantly on request.
-
-> Source : https://docs.vscentrum.be/en/latest/gent/tier2_hardware.html?highlight=VSC_DATA#shared-storage
-
-#### Check the quota
- `show_quota` or go to https://account.vscentrum.be for a general overview
-
-
-### KULeuven VSC
-
-If for your training session you are using the [KULeuven section](https://docs.vscentrum.be/leuven/genius_quick_start.html#access-to-the-cluster) of the [Flemish Supercomputing Center](https://www.vscentrum.be/), it's very likely that your group is in a list of people with priorities for a reserved cluster. As you read this you can imagine that there is not only cluster option you can use. Different clusters will have different computational powers, therefore, depending on what you will do you can choose the one that most suits you.
-
-#### Overview
-
-<!-- style="color: magenta" --> To update
-
-
-| Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-|Tier 2 Leuven | login.hpc.kuleuven.be | yes | yes | none |
-
-#### Tier 2 KUL Clusters
-
-#### Genius
-
-| Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB) |
-| --- | --- | --- | --- | --- |
-| batch/batch_long | 192 | 200 GB SSD | - | - |
-| interactive | 192 | 200 GB SSD | - | - |
-| bigmem | 768 | 200 GB SSD | - | - |
-| gpu_p100 | 192 | 200 GB SSD | 4 NVIDIA P100 | 16 |
-| GPU_v100 | 768 | 200 GB SSD | 8 NVIDIA V100 | 32 |
-| AMD | 256 | 200 GB SSD | - | - |
-
------------------------------------------------
-
-####  wICE
-
-| Cluster name | Memory (GiB) | Disk space  | GPU | GPU memory (GiB) |
-| --- | --- | --- | --- | --- |
-| batch/batch_long | 256 | 960 GB SSD | - | - |
-| batch\_sapphirerapids **or** batch\_sapphirerapids_long | 256 | 960 GB SSD | - | - |
-| bigmem | 256 | 2048 GB SSD | - | - |
-| hugemem | 960 | 8000 GB SSD | - | - |
-| gpu | 512| 960 GB SSD | 4 NVIDIA A100 SXM4 | 80 |
-| gpu_h100 | 768 | 960 GB SSD | 4 NVIDIA H100 | 80 |
-| interactive and gpu_a100_debug | 512 | 960 GB SSD | 1 NVIDIA A100 | 80 |
-
-
-#### Filesystems specifics
-
-| Filesystem name  | Intended usage | Total storage space | Personal storage space | VO storage space (*) |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| $VSC_HOME | Home directory, entry point to the system | ? | 3GB (fixed) | ❌ |
-| $VSC_DATA | Long-term storage of large data files | ? | 75GB (fixed) | ❌ |
-| $VSC_SCRATCH | Temporary fast storage of **live** data for calculations | ? | 500GB | ? |
-
-<!-- style="color: magenta" --> What do we need the below info? (Bruna - check if there is the same for UGent)
-
-| Variable | Name | 
-| ------------- | ------------- |
-| $VSC_HOME | /user/leuven/30X/vsc30XYZ | 
-| $VSC_DATA | /data/leuven/30X/vsc30XYZ|
-| $VSC_SCRATCH **or** $VSC\_SCRATCH\_SITE | /scratch/leuven/30X/vsc30XYZ |
-| $VSC\_SCRATCH\_NODE | /local_scratch |
-
-> Source : https://docs.vscentrum.be/en/latest/leuven/tier2_hardware/kuleuven_storage.html?highlight=VSC_DATA#ku-leuven-storage
-
-#### Projects and reservation for Tier-2 KU Leuven
-
-Running calculations on Tier-2 KU Leuven requires credits. New users obtained 2 millions free credits (introduction) that are valid during 6 months.
-Credits can be obtained through various type of research projects (through university, FWO, EU level). Subset of Tier-2 KUL can be reserved for research events or training events.
-
-## Introduction to HPC
-
-High performance computing (HPC) is a technology that uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
-
-HPC is extremely valuable for fields where deep-learning and machine learning algorithms are daily routine for example.
-
-The European model for HPC consists of three levels of computing capacity:
-
-1. When available at research institutions its called Tier-2.
-
-2. When provided at the level of a region/country because it exceeds the capacity of an institution in terms of needs/costs its called Tier-1.
-
-3. When available at EU level, with **very** large-scale computing infrastructure, its called Tier-0.
-
-**By contrast, Tier-3 corresponds to single computers (your own infrastructure)**
-
-
-> Flemish super computing centre (VSC)
->
-> REF: https://www.vscentrum.be/about
-> The Flemish Supercomputing Centre (_Vlaams Supercomputer Center_) is a collaboration between the five universities in Flanders
-> - VUB
-> - KU Leuven
-> - UGent
-> - UHasselt
-> - UAntwerpen). 
-> [replace with the logo of each university for a better visual]
->
->The VSC has developed a differentiated infrastructure (Tier-1 and Tier-2 level) that is available to the academic and business world. 
-> Researchers of those universities can get access to Tier-2 infrastructures through their university for free or for a preferential prices.
-> In addition, access to Tier-1 infrastructures is allocated through project grants.
-> The Tier-1 services encompass :
-> - Tier-1 data (active storage and RDM)
-> - Tier-1 cloud (virtual machines and etc...)
-> - Tier-1 compute (calculations, access through terminal or through graphical user interface through Open On Demand)
 
 
 ## Installed software
