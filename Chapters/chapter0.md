@@ -57,29 +57,17 @@ Once you have an account, you can [access it](https://account.vscentrum.be/), an
 
 ## ajoute l'acceptation de réservation
 
-**connecting at UGent instance of VSC**
-
-Visit [login page](https://login.hpc.ugent.be) , the 1st time you do it permission will be requested to let the web portal access some of your personal information, authorize it!!  Once logged in, you should see this start page!
-
-<center><img src="../images/permission_VSC.png" width="300"/></center>
-
-Once you are logged in, you should see this page:
-
-<center><img src="../images/login_ugentvsc.png" width="300"/></center>
-
-All good, you can get started!
-
-**connecting at KULeuven instance of VSC**
-
+**connecting at Tier1 instance of VSC**
 Visit [login page](https://auth.vscentrum.be/auth/login)  the 1st time you do it permission will be requested to let the web portal access some of your personal information, authorize it!!  Once logged in, you should see this start page!
 
 <center><img src="../images/permission_VSC.png" width="300"/></center>
+<center><img src="../images/select_your_org.png" width="900"/></center>
 
 Once you are logged in, you should see this page:
 
-<center><img src="../images/KULeuven_ondemand.png" width="300"/></center>
+<center><img src="../images/tier1.png" width="900"/></center>
 
-**connecting at Tier1 instance of VSC**
+All good, you can get started!
 
 ## 2. Install globus personnal connector on your pc (to do)
 
