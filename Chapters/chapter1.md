@@ -26,8 +26,9 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 @orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
+# Chapter 1: Infrastructure
 
-# What is a High-Performance Computing system ?
+## What is a High-Performance Computing system ?
 
 A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly. A HPC uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
 
@@ -44,7 +45,7 @@ Among the technologies intergated in a HPC system it can include
 **GPU (Graphical processing units) nodes:** are specialized processors, ideally suited for higly demanding data processing tasks.
 
 
-# Infrastructure
+## Infrastructure
 
 The european model for HPC classifies that different offers in HPC resource and accessibility in different levels called **Tiers**.
 
