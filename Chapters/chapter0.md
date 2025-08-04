@@ -29,7 +29,7 @@ edition: 1st
 
 -->
 
-# Installations
+# Chapter0: Installations
 
 Please read this page carefully **before** the start of the workshop.
 
