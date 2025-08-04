@@ -126,8 +126,10 @@ module purge
 7. Jupyter notebook: JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0 or  JupyterNotebook/7.0.2-GCCcore-12.3.0 or JupyterNotebook/7.0.3-GCCcore-12.2.0 or JupyterNotebook/7.2.0-GCCcore-13.2.0
 8. Jupyterlab: JupyterLab/4.2.0-GCCcore-13.2.0 or JupyterLab/4.0.5-GCCcore-12.3.0 or  JupyterLab/4.0.3-GCCcore-12.2.0 or JupyterLab/3.5.0-GCCcore-11.3.0
 9. Matplotlib: matplotlib/3.5.2-foss-2022a or matplotlib/3.4.3-intel-2021 or matplotlib/3.7.2-gfbf-2023a or matplotlib/3.8.2-gfbf-2023b or matplotlib/3.9.2-gfbf-2024a
+10. Python: type ```module avail  Python/```
    
-nota bene: R and matlab  modules are also available
+- nota bene: R and matlab  modules are also available
+- reference: https://docs.hpc.ugent.be/Linux/python/
 
 [Chapters List](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/README.md#5) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md)
 
