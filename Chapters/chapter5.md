@@ -1,10 +1,39 @@
-# POC from simple questions to solutions + publicity for Alex, Bruna and Janick's course
+# Chapter 5: Bioimaging meets Bioinformatics
 
-- Idea from Bruna
-- Discuss the concept of workflow, reproducibility issue with user. E.g. Raw Image -> Ome Tiff Image -> Cellpose SAM (3D) -> measurement
-- Explain the concept of container and nextflow
+##  Theory (Discuss the concept of workflow, reproducibility issue with user)
+### 1. Reproducibility and scalability
+Given the constant technology evolution, bioimage analysts are confronted complexer, bigger data whose analysis rely on ML and require important computational ressource. 
+In addition, interdisciplinar fields such spacial omics or multiomics are gaining importance and tools from Bioinformatics can be used to tackle problems in Bioimaging.
+Common problem in Bioinformatics and Bioimaging are: 
+- scalability of the analysis
+- how to make sure the analysis is reproducible (on different system)
+- how to deal with multi-step analysis where each steps use different tool/ programming language.
+Those problems can be partially solved using HPC, containers and workflow managers.
+
+### 2. Containers
+
+A container is way to pack your software so that it is isolated from the external world and can be used independently of the explotation system (unix, windows). 
+The advantage of a container is its reproducibility and it is less demanding for the system (check with Bruna). 
+There exists plethora of containers but the most important are Docker and Apptainer. 
+Interestingly, there exist many avalaible free resource for containers for image analysis (EMBL, dockerhub, wavecontainer, github) and BIC can share/help with containers for image analysis.  
+However, building and running containers has a steep learning curve. 
+Therefore, we highly recommend to follow the VIB docker and apptainer course (https://training.vib.be/all-trainings/reproducible-data-analysis-0) if you want to know more about this topic. 
+
+## 3. Workflow managers
+
+A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, in a scientific application (a reformuler). Scientific workflows are common in earth science, astronomy and bioIT.
+They enable to link different building blocks (modules and subworkflows) together. Popular workflows managers are Galaxy, Nextflow and Snakemake, Knime. The most popular workflows currently are Nextflow and Snakemake. Nextflow is using Groovy (java-based), while Snakemake is using python. Both workflows have their pros and cons. Nextflow has a bigger community support, scalability and better interface with cluster and cloud but the learning curve is steeper than for Snakemake. Snakemake is python based and better for less flexible and smaller pipeline. Here we will give a small demo about nextflow and containers explain where you can find resources. Nevertheless, we highly recommend following VIB nextflow course (https://training.vib.be/all-trainings/reproducible-data-analysis-0).
+
+### Use case 
+- Containers and workflow managements for image analysis
+-  E.g. Raw Image -> Ome Tiff Image -> Cellpose SAM (3D) -> measurement
 - Show some graphic example (with flowchart) and some graphics (our own and nfcore) 
 - demonstrate one example with cellpose and with small dataset
 - show where the output is and explain how you can run it
-- ask what kind of pipeline they would need
-- make publicity for microcredentials (HPC, Docker and Nextflow)
+
+### What we are working on and what you would need
+- segmentation
+- alignment
+- denoising
+- deconvolution?
+
