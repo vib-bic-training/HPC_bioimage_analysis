@@ -66,6 +66,8 @@ All good, you can get started!
 
 ## 2. Install globus personnal connector on your PC
 
+<img src="https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/globus.png" align="center"/>
+
 ### Windows
 
 - download `Globus Connect Personal` and follow the next steps: https://docs.globus.org/globus-connect-personal/install/windows/
