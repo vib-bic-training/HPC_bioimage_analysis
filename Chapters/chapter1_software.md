@@ -141,11 +141,13 @@ module purge
    - TensorFlow/2.7.1-foss-2021b
    - TensorFlow/2.15.1-foss-2023a-CUDA-12.1.1
      
--_Nota bene_: There exists many flavours of tensorflow: estimator, probability, etc ...
+- _Nota bene_: There exists many flavours of tensorflow: estimator, probability, etc ...
 - To see them all use: ```module spider tensorflow```
-6. pytorch:  PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
-          -_Nota bene_:there are many flavours of pytorch: geometric, lightning, ignite,
-          - to see them all: ```module spider pytorch```
+6. pytorch:
+   - PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
+     
+- _Nota bene_:there are many flavours of pytorch: geometric, lightning, ignite,
+- to see them all: ```module spider pytorch```
 7. Jupyter notebook: 
    - JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0
    - JupyterNotebook/7.0.2-GCCcore-12.3.0
