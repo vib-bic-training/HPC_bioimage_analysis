@@ -215,8 +215,9 @@ Please cite as:
 | 1     | [Chapter 1 : Infrasctructure](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter01.md#1) |
 | 2     | [Chapter 2 : Data Transfer](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md#1) |
 | 3     | [Chapter 3 : BAND and software with GUI](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
-| 4     | [Chapter 4 : Jupyter notebooks and python script](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
-| 3     | [Chapter 5 : Teaser/ Demo bioimaging meets bioinformatics](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
+| 3     | [Chapter 4 : Modules (pre-installed software)](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
+| 4     | [Chapter 5 : Jupyter notebooks and python script](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
+| 3     | [Chapter 6 : Teaser/ Demo bioimaging meets bioinformatics](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter03.md#1) |
 
 
 # References
