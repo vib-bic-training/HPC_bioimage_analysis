@@ -89,11 +89,11 @@ Most of the pre-installed software are accessible via the Menu `Application › 
 | -------- | ------- |
 | napari 4.0.19 devbio empanada  | napari + devbio + empanada    |
 | napari 4.0.19 devbio empanada | napari + devbio + empanada already on the assistant interface     |
-| napari microsam | ...|
-| napari 4.0.19 n2v    | napari [noise2void](https://juglab.github.io/napari-n2v/)    |
+| napari 40.019 microsam | napari + micro-sam|
+| napari 4.0.19 n2v  | napari [noise2void](https://juglab.github.io/napari-n2v/)    |
 | cellpose 3| ...|
 | cellpose sam| ...|
-| qupath| qupath + ...|
+| QuPath 5.0| qupath |
 | ilastik| ...|
 
 ## 3.2 Napari
@@ -102,7 +102,7 @@ Most of the pre-installed software are accessible via the Menu `Application › 
 
 A bundle of napari plugins useful for 3D+t image processing and analysis for studying developmental biology, developped by Robert Haase and Co, [more info](https://github.com/haesleinhuepf/devbio-napari)
 
-Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+Start via the menu `Application › Bioimage Analysis › napari 4.0.19 devbio empanada assistant`
 
 > [!TIP]
 > Alternativelly, you can start it via the terminal, then locad manually the module and start it
@@ -168,6 +168,15 @@ https://github.com/tatianawoller/Training_prep_290524/blob/main/images/napari/06
 ![Exclude labels on edge](/images/napari/15_devbio_napari_segmentation_result_overview.png
  'Exclude labels on edge')
 
+
+
+### Micro-SAM
+A tool to annotate faster images in 2D-3D, [more info](https://computational-cell-analytics.github.io/micro-sam/)
+
+Start via the menu `Application › Bioimage Analysis › napari 4.0.19 microsam`
+
+![Exclude labels on edge](/images/napari/micro-sam.png) 
+
  ### 2- Napari n2v (à enlever)
 
 N2V is a sef-supervised denoising algorithm allowing removing pixel-independent noise, [more info]([https://juglab.github.io/napari-n2v/)
@@ -176,7 +185,7 @@ N2V is a sef-supervised denoising algorithm allowing removing pixel-independent 
 Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder `training` will be used to train a denoising model.
 
 - Training
-  - Start via the menu `Application › napari 4.0.19 devbio empanada assistant`
+  - Start via the menu `Application › Bioimage Analysis › napari 4.0.19 devbio empanada assistant`
   - Drag and drop the images located in training folder into napari. Keep only 2 and rename one to be `training` and the other one to be `validation`
   - Start the plugin `Plugins › napari-n2v › N2V Train`
   - Train a model:
@@ -219,7 +228,7 @@ Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder
 empanada-napari allow you to run Panoptic segmentation algorithms for 2D and 3D electron microscopy in napari to e.g. segment mitochondria, E.R., see [website](
 https://empanada.readthedocs.io/en/latest/tutorials/2d_tutorial.html#d-inference-tutorial)
 
-- Start napari via the menu `Application › napari 4.0.19 devbio empanada assistant`
+- Start napari via the menu `Application › Bioimage Analysis › napari 4.0.19 devbio empanada assistant`
 
 - Start the plugin `Plugins › empanada-napari › 2D Inference (Parameter Testing)`
 
