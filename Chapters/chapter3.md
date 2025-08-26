@@ -1,9 +1,9 @@
 
 <!--
 
-author:   Pavie Benjamin
-email:    benjamin.pavie@vib.de
-version:  2.0.0
+author:   Tatiana Woller, Benjamin Pavie
+email:    training@vib.de
+version:  1.0.0
 language: en
 narrator: UK English Female
 
@@ -98,7 +98,7 @@ Most of the pre-installed software are accessible via the Menu `Application › 
 
 ## 3.2 Napari
 
-### 1- Napari devbio
+### Napari devbio
 
 A bundle of napari plugins useful for 3D+t image processing and analysis for studying developmental biology, developped by Robert Haase and Co, [more info](https://github.com/haesleinhuepf/devbio-napari)
 
@@ -173,11 +173,88 @@ https://github.com/tatianawoller/Training_prep_290524/blob/main/images/napari/06
 ### Micro-SAM
 A tool to annotate faster images in 2D-3D, [more info](https://computational-cell-analytics.github.io/micro-sam/)
 
-Start via the menu `Application › Bioimage Analysis › napari 4.0.19 microsam`
+1. Start via the menu `Application › Bioimage Analysis › napari 4.0.19 microsam`
 
-![Exclude labels on edge](/images/napari/micro-sam.png) 
+2. Open the demo image `File > Open Sample > SegmentAnything for Microscopy > HeLa 2d example data`
 
- ### 2- Napari n2v (à enlever)
+3. Select the model vit_b
+
+4. Select the `prompts` layer, select the rectangle tool, draw a rectangle around the object and Press `Segment Object`
+
+![Add point for micro-sam](/images/napari/micro-sam_01.png) 
+
+![Add point for micro-sam](/images/napari/micro-sam_02.png) 
+
+
+
+### Napari ilastik
+A tool to perform pixel classification like Ilastik, [more info](https://github.com/ilastik/ilastik-napari/)
+
+- Application terminal Emulator
+
+- Start via a module `module load ilastik-napari/0.2.4-foss-2023a`
+
+- `napari`
+
+- Activate the plugin : `Plugins > ilastik-napari`
+
+- Open a demo image `File > Open Sample > human mitosis`
+
+- In layer list, create a new Labels layer.
+
+![Create a new layer](/images/napari/napari_ilastik_01.png) 
+
+- In layers control, switch to the paint action.
+
+![Switch to paint action](/images/napari/napari_ilastik_02.png) 
+
+- Draw your background labels
+
+![Draw the background labels](/images/napari/napari_ilastik_03.png) 
+
+- Switch to a new label
+
+![Switch to a new label](/images/napari/napari_ilastik_04.png) 
+
+- Draw your foreground labels.
+
+![Draw your foreground label](/images/napari/napari_ilastik_05.png) 
+
+- Select output types you need (Segmentaition or Propbabilities), and click `Run`.
+
+![Select output type and run](/images/napari/napari_ilastik_06.png) 
+
+![Before](/images/napari/napari_ilastik_07.png)
+
+
+### Napari - Empanada
+
+empanada-napari allow you to run Panoptic segmentation algorithms for 2D and 3D electron microscopy in napari to e.g. segment mitochondria, E.R., see [website](
+https://empanada.readthedocs.io/en/latest/tutorials/2d_tutorial.html#d-inference-tutorial)
+
+- Start napari via the menu `Application › Bioimage Analysis › napari 4.0.19 devbio empanada assistant`
+
+- Start the plugin `Plugins › empanada-napari › 2D Inference (Parameter Testing)`
+
+- Open the folder `File › Open Folder...` and select the folder containing the images for empanada located at `/dodrio/scratch/projects/2024_300/training/empanada/`
+
+    ![Napari open folder](/images/napari/napari_open_folder.png 'Napari open folder')
+
+    
+- Leave the default parameters:
+
+  ![Napari empanada](/images/napari/01_napari_empanada.png 'Napari empanada')
+
+- Click on `Run 2D inference`
+> [!Warning]
+> It will download the mitonet model in `/dodrio/scratch/users/vscxxxxx/.empanada/MitoNet_v1.pth`, which is around 221MB, so it will take some space on the limted space you have on your personal space.
+
+At the end you should the that the images have been segmented using the mitonet_v1 model
+      ![Napari empanada](/images/napari/02_napari_empanada.png 'Napari empanada')
+
+[previous chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter04.md)
+
+### Napari n2v
 
 N2V is a sef-supervised denoising algorithm allowing removing pixel-independent noise, [more info]([https://juglab.github.io/napari-n2v/)
 
@@ -223,62 +300,6 @@ Dataset are located in : `https://juglab.github.io/napari-n2v/` and a sub-folder
   
     ![N2V training](/images/napari/03_napari_n2v.png 'N2V Training')
 
-### 3- Napari - Empanada
-
-empanada-napari allow you to run Panoptic segmentation algorithms for 2D and 3D electron microscopy in napari to e.g. segment mitochondria, E.R., see [website](
-https://empanada.readthedocs.io/en/latest/tutorials/2d_tutorial.html#d-inference-tutorial)
-
-- Start napari via the menu `Application › Bioimage Analysis › napari 4.0.19 devbio empanada assistant`
-
-- Start the plugin `Plugins › empanada-napari › 2D Inference (Parameter Testing)`
-
-- Open the folder `File › Open Folder...` and select the folder containing the images for empanada located at `/dodrio/scratch/projects/2024_300/training/empanada/`
-
-    ![Napari open folder](/images/napari/napari_open_folder.png 'Napari open folder')
-
-    
-- Leave the default parameters:
-
-  ![Napari empanada](/images/napari/01_napari_empanada.png 'Napari empanada')
-
-- Click on `Run 2D inference`
-> [!Warning]
-> It will download the mitonet model in `/dodrio/scratch/users/vscxxxxx/.empanada/MitoNet_v1.pth`, which is around 221MB, so it will take some space on the limted space you have on your personal space.
-
-At the end you should the that the images have been segmented using the mitonet_v1 model
-      ![Napari empanada](/images/napari/02_napari_empanada.png 'Napari empanada')
-
-[previous chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter02.md) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter04.md)
-
-
-<!--
-
-author:   Tatiana Woller, Benjamin Pavie
-email:    training@vib.de
-version:  1.0.0
-language: en
-narrator: UK English Female
-
-icon:     https://vib.be/sites/vib.sites.vib.be/files/logo_VIB_noTagline.svg
-
-comment:  This document shall provide an entire compendium and course on the
-          development of Open-courSes with [LiaScript](https://LiaScript.github.io).
-          As the language and the systems grows, also this document will be updated.
-          Feel free to fork or copy it, translations are very welcome...
-
-script:   https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js
-          https://felixhao28.github.io/JSCPP/dist/JSCPP.es5.min.js
-
-link:     https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css
-link:     https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
-link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/img/org.css
-link:     https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css
-link:     https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap
-link:     https://fonts.googleapis.com/css2?family=Open+Sans&display=swap
-link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vib-styles.css
-
-@orcid: [@0](@1)<!--class="orcid-logo-for-author-list"-->
-
 ## 3.3 QuPath
 
 > [!TIP]
@@ -286,8 +307,6 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 > 
 > It takes a bit of time the first time after login to start the software in general, so be patient
 > 
-
-## QuPath
 
 #### Start QuPath
 Start it via the menu `Applications › Bioimage analysis › QuPath 0.5.0 `
