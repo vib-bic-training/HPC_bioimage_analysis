@@ -32,7 +32,7 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 A HPC brings together several technologies such as computer architecture, algorithms, programs and electronics, and system software to solve advanced problems effectively and quickly. A HPC uses clusters of powerful processors, working in parallel, to process massive multi-dimensional datasets (big data) and solve complex problems at extremely high speeds. HPC systems typically perform at speeds more than one million times faster than the fastest commodity desktop, laptop or server systems. [https://www.ibm.com/topics/hpc].
 
-Among the technologies intergated in a HPC system it can include
+Among the technologies integrated in a HPC system are
 
 **High-end compute nodes:** multicore processors.
 
