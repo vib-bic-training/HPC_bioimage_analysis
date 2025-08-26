@@ -55,8 +55,9 @@ orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 ## 3.1 Start BAND:
 
 1. Connect to https://tier1.hpc.ugent.be
-2. Go to `My Interactive Sessions `
-3. Configure your BAND virtual desktop for the analysis
+2. Select your Home Organization
+3. Go to `My Interactive Sessions `
+4. Configure your BAND virtual desktop for the analysis
    1. Cluster : `dodrio gpu_rome_a100`
    2. Time (hours) : `2`
    3. Number of node : `1`
