@@ -80,8 +80,7 @@ It means that the files and storage systems in place **will vary**. Knowing this
 
 Generally is good to keep in mind that when you connect to the HPC, the area you start at is like the hall of a house, you should not keep too many things there or do tasks in this location. You will also have a long-term storage, where you can keep your data, but also not where your tasks will be done. Last you will have a temporary large storage place that can be access when using your tasks
 
-
-<!-- style="color: #7CA1CC;" --> \** Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
+Storage space for a group of users (Virtual Organisation or VO for short) in VSC can be increased significantly on request, check for [more information](https://docs.vscentrum.be/gent/tier1_hortense.html#system-specific-aspects) if you need.
 
 ## UGent TIER 1
 <!-- style="color: magenta" --> VO = virtual organization
@@ -95,14 +94,13 @@ As you probably already guessed, there is a difference if we are talking about p
 
 | Tier  | Login (vscnumber) | Personal storage space | VO Storage Space |  VO Project space |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
+| Tier 1 | tier1.hpc.ugent.be |yes|yes|yes|
 
 
 | Cluster name  | Memory (GiB) | Disk space (GB) SSD  |  GPU | GPU memory (GiB)|
 | --- | --- | --- | --- | --- |
 | cpu_rome | 256 | 480 | - | - |
 | cpu_rome_512 | 512 | 480 | - | - |
-| cpu_milan | 256 | 480 | - | - |
 | gpu_rome_a100_40| 256 | 480 | 4 NVIDIA A100  | 40 |
 | gpu_rome_a100_80 | 512 | 480 | 4 NVIDIA A100  | 80 |
 | debug_rome ** | 256| 100 | 1 NVIDIA Quadro P1000 | 4 |
