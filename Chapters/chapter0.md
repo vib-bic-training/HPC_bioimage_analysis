@@ -40,7 +40,7 @@ In this session you will find what you need to install in your computer addition
 **a. Register** for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) before the course since it might take some time to process and activate. 
 
 >
-> P.s.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
+> P.S.: If you are from industry or in any other situation where you are not linked to an academic institution we can only help you get an account when registered in the workshop, check avaiability in [the website](https://www.vibtrainingandconferences.be/#/).
 >
 > In that case the trainer needs to request a temporary account for you to participate in the training activities.
 >
@@ -51,7 +51,8 @@ Once you have an account, you can [access it](https://account.vscentrum.be/), an
 
 *You should receive an email from the VSC (`hpc@ugent.be`) granting you access to the group (e.g. `gpr_compute_2024_300`)*
 
-**connecting at Tier1 instance of VSC**
+**Connecting at Tier1 instance of VSC**
+
 Visit [login page](https://auth.vscentrum.be/auth/login)  the 1st time you do it permission will be requested to let the web portal access some of your personal information, authorize it!!  Once logged in, you should see this start page!
 
 <center><img src="../images/permission_VSC.png" width="300"/></center>
@@ -63,12 +64,12 @@ Once you are logged in, you should see this page:
 
 All good, you can get started!
 
-## 2. Install globus personnal connector on your pc (to do)
+## 2. Install globus personnal connector on your PC
 
 ### Windows
 
-- download globus personnal connector and follow the next steps: https://docs.globus.org/globus-connect-personal/install/windows/
-- install globuspersonnal connector in a place where you have admin rights or check if it is white listed by your local IT
+- download `Globus Connect Personal` and follow the next steps: https://docs.globus.org/globus-connect-personal/install/windows/
+- install `Globus Connect Personal` in a place where you have admin rights or check if it is white listed by your local IT
 ### Linux
 
 All the documentation can be found here: https://docs.globus.org/globus-connect-personal/install/linux/
