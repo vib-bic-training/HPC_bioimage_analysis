@@ -74,7 +74,7 @@ All good, you can get started!
 - install `Globus Connect Personal` in a place where you have admin rights or check if it is white listed by your local IT
 ### Linux
 
-All the documentation can be found here: https://docs.globus.org/globus-connect-personal/install/linux/
+Documentation can be found here : https://docs.globus.org/globus-connect-personal/install/linux/
 
 - open a terminal and follow the next steps
 ```bash
