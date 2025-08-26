@@ -141,27 +141,27 @@ module purge
    - TensorFlow/2.7.1-foss-2021b
    - TensorFlow/2.15.1-foss-2023a-CUDA-12.1.1
      
-_Nota bene_: There exists many flavours of tensorflow: estimator, probability, etc ...
+-_Nota bene_: There exists many flavours of tensorflow: estimator, probability, etc ...
 - To see them all use: ```module spider tensorflow```
 6. pytorch:  PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
--_Nota bene_:there are many flavours of pytorch: geometric, lightning, ignite,
-- to see them all: ```module spider pytorch```
+          -_Nota bene_:there are many flavours of pytorch: geometric, lightning, ignite,
+          - to see them all: ```module spider pytorch```
 7. Jupyter notebook: 
-- JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0
-- JupyterNotebook/7.0.2-GCCcore-12.3.0
-- JupyterNotebook/7.0.3-GCCcore-12.2.0
-- JupyterNotebook/7.2.0-GCCcore-13.2.0
+   - JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0
+   - JupyterNotebook/7.0.2-GCCcore-12.3.0
+   - JupyterNotebook/7.0.3-GCCcore-12.2.0
+   - JupyterNotebook/7.2.0-GCCcore-13.2.0
 8. Jupyterlab:
-- JupyterLab/4.2.0-GCCcore-13.2.0
-- JupyterLab/4.0.5-GCCcore-12.3.0
-- JupyterLab/4.0.3-GCCcore-12.2.0
-- JupyterLab/3.5.0-GCCcore-11.3.0
+   - JupyterLab/4.2.0-GCCcore-13.2.0
+   - JupyterLab/4.0.5-GCCcore-12.3.0
+   - JupyterLab/4.0.3-GCCcore-12.2.0
+   - JupyterLab/3.5.0-GCCcore-11.3.0
 9. Matplotlib:
-- matplotlib/3.5.2-foss-2022a
-- matplotlib/3.4.3-intel-2021
-- matplotlib/3.7.2-gfbf-2023a
-- matplotlib/3.8.2-gfbf-2023b
-- matplotlib/3.9.2-gfbf-2024a
+   - matplotlib/3.5.2-foss-2022a
+   - matplotlib/3.4.3-intel-2021
+   - matplotlib/3.7.2-gfbf-2023a
+   - matplotlib/3.8.2-gfbf-2023b
+   - matplotlib/3.9.2-gfbf-2024a
 10. Python: type ```module avail  Python/```
    
 - _nota bene_: R and matlab  modules are also available
