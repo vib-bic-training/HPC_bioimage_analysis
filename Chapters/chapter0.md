@@ -35,12 +35,6 @@ Please read this page carefully **before** the start of the workshop.
 
 In this session you will find what you need to install in your computer additionally to complementary training material to be completed prior to course.
 
-<img src="../images/website-setup-concept-landing-page/3012965.jpg" alt="set up" width="300"/>
-
-[Image](https://www.freepik.com/free-vector/website-setup-concept-landing-page_5823714.htm#fromView=search&page=1&position=3&uuid=8e36a5ee-39d5-4073-bfcc-47f4c8a009c0&query=intallation+computer) designed by [Freepik](https://www.freepik.com/)
-
-
-
 ## 1. Set your VSC account
 
 **a. Register** for an [HPC account](https://docs.vscentrum.be/access/vsc_account.html) before the course since it might take some time to process and activate. 
