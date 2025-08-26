@@ -159,10 +159,9 @@ These folders are accessible via the File Manager in the Bioimage ANalysis Deskt
 - raw data should be deposited on institutional archive or external archive (EMPIAR and Bioimage archive)
 
 ## Alternative to Globus
-- using CLI (scp or sftp) and a terminal (https://docs.hpc.ugent.be/macOS/connecting/)
+- using CLI ([scp](https://docs.hpc.ugent.be/macOS/connecting/#using-scp) or [sftp](https://docs.hpc.ugent.be/macOS/connecting/#using-sftp)) and a terminal (https://docs.hpc.ugent.be/macOS/connecting/)
 - using WinSCP (https://winscp.net/eng/download.php)
 
-## Course to follow 
-- github course at vib
-- Mango course at VSC and RDM at vib
+## Courses to follow 
+- Training at VIB (git, Introduction to HPC, RDM, ...) : https://training.vib.be/all-trainings 
 
