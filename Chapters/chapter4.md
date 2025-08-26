@@ -49,7 +49,7 @@ workshop_edition: 1st
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"
 -->
 
-# Chapter x: Installed software
+# Chapter 4: Module (pre-Installed software)
 
 ## General linux command
 
