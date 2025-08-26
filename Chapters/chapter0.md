@@ -1,6 +1,6 @@
 <!--
 
-author:   Bruna Piereck
+author:   Benjamin Pavie Bruna Piereck Tatiana Woller
 email:    trainingandconferences@vib.be
 version:  1.0.0
 language: en
@@ -49,7 +49,7 @@ Once you have an account, you can [access it](https://account.vscentrum.be/), an
 
 **b. Test** your account and accept the invitation to reservation:
 
-## ajoute l'acceptation de réservation
+*You should receive an email from the VSC (`hpc@ugent.be`) granting you access to the group (e.g. `gpr_compute_2024_300`)*
 
 **connecting at Tier1 instance of VSC**
 Visit [login page](https://auth.vscentrum.be/auth/login)  the 1st time you do it permission will be requested to let the web portal access some of your personal information, authorize it!!  Once logged in, you should see this start page!
