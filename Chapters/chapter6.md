@@ -1,4 +1,4 @@
-# Chapter 5: Bioimaging meets Bioinformatics
+# Chapter 6: Bioimaging meets Bioinformatics
 
 ##  Theory (Discuss the concept of workflow, reproducibility issue with user)
 ### 1. Reproducibility and scalability
