@@ -58,6 +58,21 @@ Alternatively, if you have a conda environment yaml file, the environment can be
 ```
 conda env create -f environment.yml
 ```
+
+To list the available conda env or to get more info about the conda installation, type:
+```
+conda env list
+conda info
+# to remove an environment
+conda env remove -n myenv
+```
+> [!TIP]
+> 
+> you can pull from public and private repositories from github on VSC and then build a conda env from the yaml of the repo. In addition, you can also push back your code.
+>
+> ``` git clone any_repository```
+>
+
 ## Jupyter notebook
 ## How to start Jupyter notebook
 Go to [the Open On Demand portal](https://tier1.hpc.ugent.be/) and log in after multifactor-authentification
@@ -93,9 +108,42 @@ output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 ## Jupyterlab
 
 ## VSCode server
+The advantage of vscode is that you don't need to fix the python version in advance and you can also run other programming languages beside Python (i.e. Groovy, R, Julia, Rust, C/C#/C++).
+
+### How to start VSCode
+To start vscode, select code server (nb: on Tier2 KUL: it would be called vsc code server):
+![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_server_start.png)
+
+Then, select the right account, the right workdir and the appropriate queue with the amount of CPU and GPU (in this example, it is CPU only)
+![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_server_start_2.png)
+
+### How to start a terminal and set-up
+
+Here is how to open a terminal:
+![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_open_a_terminal.png)
+
+To change from folder, you can click on File > Open new folder
+
+Nota bene: you can also install additional extension for GIT, Nextflow and docker by clicking on the extension icon (cube).
+
+### How to run a jupyter notebook with a specific pre-build conda env
+
+To run a specific notebook with a specific python environment, open the python notebook and then select the kernel on the top right side and click on python environment.
+![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_select_kernel.png)
+
+You can either make a new environment or use an existing one:
+![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_select_env.png)
+
+Then you should be able to import your python librairies
+![images](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_check.png)
 
 
 ## Additional resources
+
+### VSC reference on Python
+- https://docs.vscentrum.be/compute/software/python_package_management.html
+- https://docs.hpc.ugent.be/Windows/jupyter/
+- https://docs.hpc.ugent.be/Windows/python/
 
 ### Jupyter Notebook 
 - Deep learning : https://github.com/HenriquesLab/ZeroCostDL4Mic 
