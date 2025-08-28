@@ -106,6 +106,7 @@ output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 > 
 
 ## Jupyterlab
+- not working properly with modules of 2022a and not loading napari modules
 
 ## VSCode server
 The advantage of vscode is that you don't need to fix the python version in advance and you can also run other programming languages beside Python (i.e. Groovy, R, Julia, Rust, C/C#/C++).
