@@ -80,6 +80,21 @@ python -m ipykernel install --user  --name careamics --display-name CAREamics
 > ``` git clone any_repository```
 >
 
+## How to use venv and combined it with modules
+
+```
+# choose the right python version
+module load Python/3.10.4-GCCcore-11.3.0
+# load vsc-venv
+module load vsc-venv
+python -m venv bioio
+source bioio/bin/activate
+pip install bioio bioio-czi
+pip install ipykernel
+python -m ipykernel install --user  --name bioio --display-name bioioczi 
+```
+
+
 ## Jupyter notebook
 ## How to start Jupyter notebook
 Go to [the Open On Demand portal](https://tier1.hpc.ugent.be/) and log in after multifactor-authentification
