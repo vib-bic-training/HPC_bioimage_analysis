@@ -71,8 +71,15 @@ conda env remove -n myenv
  ```
 source activate myenv
 conda install ipykernel
-python -m ipykernel install --user  --name careamics --display-name CAREamics 
+python -m ipykernel install --user --name myenv --display-name myenvsDisplayName 
 ```
+
+> [!NOTE]
+> 
+> - `--name` : conda environment name
+> - `--display-name` : Name which will appear as a kernel name in the jupyter notebook
+> 
+
 > [!TIP]
 > 
 > you can pull from public and private repositories from github on VSC and then build a conda env from the yaml of the repo. In addition, you can also push back your code.
