@@ -6,9 +6,9 @@ If you can work with centrally installed softwares (modules) and you want to use
 In case, you need more specific python librairy, you can install a miniconda and create your own conda environment that can be used in Jupyter notebook or Jupyterlab.
 If you can work with only python scripts or you need to mix different languages, you can use vscode server. 
 
-## How to make customed conda environments
+## Conda environments
 
-### Installation miniconda3
+### Miniconda3 installation
 ```
 cd $VSC_DATA
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -43,7 +43,7 @@ conda activate
 
 The terminal prompt should then change to something like `(base) [vsc12345@gpu123 ~]$ `
 
-### Creating a new conda environment
+### Create a new conda environment
 
 A new conda environment can now be created as usual, and Python packages can be installed in it.
 
@@ -87,7 +87,9 @@ python -m ipykernel install --user --name myenv --display-name myenvsDisplayName
 > ``` git clone any_repository```
 >
 
-## How to use venv and combined it with modules
+## Venv environments
+
+venv will alow you to combine pip package with easybuild modules by first loading the Python Module (see [VSC doc](https://docs.vscentrum.be/compute/software/python_package_management.html))
 
 ```
 # choose the right python version
