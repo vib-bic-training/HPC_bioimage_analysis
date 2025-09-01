@@ -111,7 +111,6 @@ Go to [the Open On Demand portal](https://tier1.hpc.ugent.be/) and log in after 
 Select **Jupyter notebook** or Jupyterlab (maybe more **Jupyter notebook** since you can modify the `Working Directory`) with the following specifications: 
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/2dd8d125-d679-4837-9798-07b78b2b0bbd)
 ![image](https://github.com/vib-bic-training/HPC_training_bioimaging_1/assets/103046100/31182681-1283-47ec-ad04-a43efffeb34a)
-
 How to list existing kernels and how to remove them:
 ```
 !jupyter kernelspec list
