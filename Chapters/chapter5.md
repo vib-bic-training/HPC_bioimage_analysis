@@ -93,12 +93,18 @@ venv will alow you to combine pip package with easybuild modules by first loadin
 
 ```
 # choose the right python version
-module load Python/3.10.4-GCCcore-11.3.0
+module load   Python/3.11.3-GCCcore-12.3.0
+module load  PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
+module load torchvision/0.16.0-foss-2023a-CUDA-12.1.1
+module load matplotlib/3.7.2-gfbf-2023a
+module load scikit-image/0.22.0-foss-2023a
 # load vsc-venv
 module load vsc-venv
-python -m venv bioio
-source bioio/bin/activate
-pip install bioio bioio-czi
+python -m venv training_napari
+source training_napari/bin/activate
+pip install bioio bioio-czi bioio-ome-tiff pandas==2.0.3
+pip install cellpose==4.0.6
+pip install "napari[all]"
 pip install ipykernel
 python -m ipykernel install --user  --name bioio --display-name bioioczi 
 ```
