@@ -12,12 +12,32 @@ Those problems can be partially solved using HPC, containers and workflow manage
 
 ### 2. Containers
 
+#### Introduction
 A container is way to pack your software so that it is isolated from the external world and can be used independently of the explotation system (unix, windows). 
 The advantage of a container is its reproducibility and it is less demanding for the system (check with Bruna). 
 There exists plethora of containers but the most important are Docker and Apptainer. 
-Interestingly, there exist many avalaible free resource for containers for image analysis (EMBL, dockerhub, wavecontainer, github) and BIC can share/help with containers for image analysis.  
-However, building and running containers has a steep learning curve. 
+Interestingly, there exist many avalaible free resource for containers for image analysis (EMBL, dockerhub (https://hub.docker.com/), wavecontainer (https://seqera.io/containers/), github) and BIC can share/help with containers for image analysis. 
+
+#### Small demo on prebuild containers
+- How to run cellpose from an available container on dockerhub
+```
+export APPTAINER_TMPDIR=$VSC_SCRATCH/apptainer_tmp
+mkdir -p $APPTAINER_TMPDIR
+export APPTAINER_CACHEDIR=$VSC_SCRATCH/apptainer_cache
+mkdir -p $APPTAINER_CACHEDIR
+apptainer pull docker://biocontainers/cellpose:3.1.0_cv1
+```
+- how to see the available option and how to run
+```
+apptainer exec cellpose_3.1.0_cv1.sif cellpose --help
+apptainer run cellpose_3.1.0_cv1.sif cellpose --image_path ../training/2024/cellpose/hdab_fat_cells_2d.tif --pretrained_model cyto3
+```
+#### Using complex or customed containers
+If you cannot find the container that you need, then you have to build it.
+However, learning how to build and maintain containers has a steep learning curve. 
 Therefore, we highly recommend to follow the VIB docker and apptainer course (https://training.vib.be/all-trainings/reproducible-data-analysis-0) if you want to know more about this topic. 
+
+
 
 ## 3. Workflow managers
 
