@@ -45,9 +45,9 @@ Therefore, we highly recommend to follow the VIB docker and apptainer course (ht
 A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, in a scientific application (a reformuler). Scientific workflows are common in earth science, astronomy and bioIT.
 They enable to link different building blocks (modules and subworkflows) together. Popular workflows managers are Galaxy, Nextflow and Snakemake. The most popular workflows currently are Nextflow and Snakemake. Nextflow is using Groovy (java-based), while Snakemake is using python. 
 
-## 🐍 **Snakemake** vs 🌊 **Nextflow** Comparison
+## Snakemake vs  Nextflow Comparison
 
-| Aspect | 🐍 **Snakemake** | 🌊 **Nextflow** |
+| Aspect |  <img src="https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/snakemake.png?raw=true" width="20"> **Snakemake** |  <img src="https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/nextflow.png?raw=true" width="20"> **Nextflow** |
 |--------|------------------|------------------|
 | **📝 Ease of Use** | ✅ **Easier** <br/>Python-like syntax <br/>Simple rule-based | ❌ **Harder** <br/>Groovy syntax <br/>Complex processes |
 | **☁️ Cloud & Scalability** | ⚠️ **Limited** <br/>Basic cloud support <br/>Good for HPC | ✅ **Excellent** <br/>Native cloud integration <br/>Superior scaling |
@@ -60,7 +60,7 @@ How to choose:
 
 ## 🎯 **Quick Decision Guide**
 
-| Choose **🐍 Snakemake** if: | Choose **🌊 Nextflow** if: |
+| Select <img src="https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/snakemake.png?raw=true" width="20"> Snakemake** if: | Select <img src="https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/nextflow.png?raw=true" width="20"> Nextflow** if: |
 |---------------------------|--------------------------|
 | • You know Python | • You need cloud deployment |
 | • Simple HPC workflows | • Want ready-made pipelines |
@@ -68,19 +68,73 @@ How to choose:
 | • File-based processing | • Complex data flows |
 
 
- 
- Here we will give a small demo about nextflow and containers explain where you can find resources. Nevertheless, we highly recommend following VIB nextflow course (https://training.vib.be/all-trainings/reproducible-data-analysis-0).
+- Here we will give a small demo about nextflow and containers explain where you can find resources. Nevertheless, we highly recommend following VIB nextflow course (https://training.vib.be/all-trainings/reproducible-data-analysis-0).
 
 ### Use case 
 - Containers and workflow managements for image analysis
--  E.g. Raw Image -> Ome Tiff Image -> Cellpose SAM (3D) -> measurement
+
+### 🔧 **Pipeline Overview**
+
+| Step | Input | Process | Output | Tools | GPU |
+|------|-------|---------|--------|---------|--------|
+| **1** | CZI | 🔄 **Conversion** | OME.TIFF |skimage&bioio|❌|
+| **2** | OME.TIFF | 🎯 **Segmentation** | Labels |CellposeSAM|✅|
+| **3** | Labels + Raw | 📏 **Measurements** | XLSX |skimage&bioio|❌|
+  
+
 - Show some graphic example (with flowchart) and some graphics (our own and nfcore) 
 - demonstrate one example with cellpose and with small dataset
+- Here is how my pipeline is structured
+```bash
+tree 03_modular_pipeline/
+03_modular_pipeline/
+├── bin
+│   ├── cellpose_seg_nextflow.py
+│   ├── convert_czi2ometiff.py
+│   └── metrics.py
+├── main.nf
+├── modules
+│   ├── cellpose
+│   │   └── main.nf
+│   ├── conversion
+│   │   └── main.nf
+│   └── metrics
+│       └── main.nf
+└── nextflow.config
+```
+- On HPC, there are different way to run it:
+ ```bash
+# locally
+module load Nextflow
+nextflow run main.nf
+# using queue
+module load Nextflow
+nextflow run main.nf -profile vsc_ugent,tier1_custom
+```
+- of course running nextflow on different cluster will have an incidence and it will lead to slight change in the configuration file.
 - show where the output is and explain how you can run it
+```bash
+tree results
+results/
+├── cellpose
+│   └── bioimage_analysis_training_dataset_cells.ome_cp_masks.tif
+├── converted
+│   └── bioimage_analysis_training_dataset_cells.ome.tiff
+└── metrics
+    └── nuclei_analysis_bioimage_analysis_training_dataset_cells.ome.xlsx
+```
 
+### Big advantage of nextflow
+Nfcore pipeline and module:
+- https://nf-co.re/pipelines
+- https://nf-co.re/modules
+- https://seqera.io/containers/
+  
 ### What we are working on and what you would need
-- segmentation
-- alignment
-- denoising
+- segmentation (ilastik, cellpose)
+- EM ( alignment)
+- EM + LM denoising
+- future plan: EM segmentation 
 - deconvolution?
+- lightsheet?
 
