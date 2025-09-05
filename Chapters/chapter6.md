@@ -32,6 +32,7 @@ apptainer pull docker://biocontainers/cellpose:3.1.0_cv1
 apptainer exec cellpose_3.1.0_cv1.sif cellpose --help
 apptainer run cellpose_3.1.0_cv1.sif cellpose --image_path ../training/2024/cellpose/hdab_fat_cells_2d.tif --pretrained_model cyto3
 ```
+- Exercise: what is the issue with this container?
 #### Using complex or customed containers
 If you cannot find the container that you need, then you have to build it.
 However, learning how to build and maintain containers has a steep learning curve. 
@@ -42,7 +43,33 @@ Therefore, we highly recommend to follow the VIB docker and apptainer course (ht
 ## 3. Workflow managers
 
 A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, in a scientific application (a reformuler). Scientific workflows are common in earth science, astronomy and bioIT.
-They enable to link different building blocks (modules and subworkflows) together. Popular workflows managers are Galaxy, Nextflow and Snakemake, Knime. The most popular workflows currently are Nextflow and Snakemake. Nextflow is using Groovy (java-based), while Snakemake is using python. Both workflows have their pros and cons. Nextflow has a bigger community support, scalability and better interface with cluster and cloud but the learning curve is steeper than for Snakemake. Snakemake is python based and better for less flexible and smaller pipeline. Here we will give a small demo about nextflow and containers explain where you can find resources. Nevertheless, we highly recommend following VIB nextflow course (https://training.vib.be/all-trainings/reproducible-data-analysis-0).
+They enable to link different building blocks (modules and subworkflows) together. Popular workflows managers are Galaxy, Nextflow and Snakemake. The most popular workflows currently are Nextflow and Snakemake. Nextflow is using Groovy (java-based), while Snakemake is using python. 
+
+## 🐍 **Snakemake** vs 🌊 **Nextflow** Comparison
+
+| Aspect | 🐍 **Snakemake** | 🌊 **Nextflow** |
+|--------|------------------|------------------|
+| **📝 Ease of Use** | ✅ **Easier** <br/>Python-like syntax <br/>Simple rule-based | ❌ **Harder** <br/>Groovy syntax <br/>Complex processes |
+| **☁️ Cloud & Scalability** | ⚠️ **Limited** <br/>Basic cloud support <br/>Good for HPC | ✅ **Excellent** <br/>Native cloud integration <br/>Superior scaling |
+| **🐳 Container Support** | ✅ **Good** <br/>Docker + Singularity <br/>Conda integration | ✅ **Excellent** <br/>All container types <br/>Seamless integration |
+| **🔧 Ecosystem** | ⚠️ **Smaller** <br/>Growing community <br/>Python-focused | ✅ **Rich** <br/>nf-core pipelines <br/>Large bioinformatics community |
+| **🚀 Performance** | ✅ **Good** <br/>Efficient execution <br/>Easy debugging | ✅ **Excellent** <br/>Advanced parallelization <br/>Better resume capabilities |
+
+How to choose:
+
+
+## 🎯 **Quick Decision Guide**
+
+| Choose **🐍 Snakemake** if: | Choose **🌊 Nextflow** if: |
+|---------------------------|--------------------------|
+| • You know Python | • You need cloud deployment |
+| • Simple HPC workflows | • Want ready-made pipelines |
+| • Prefer easy debugging | • Need maximum scalability |
+| • File-based processing | • Complex data flows |
+
+
+ 
+ Here we will give a small demo about nextflow and containers explain where you can find resources. Nevertheless, we highly recommend following VIB nextflow course (https://training.vib.be/all-trainings/reproducible-data-analysis-0).
 
 ### Use case 
 - Containers and workflow managements for image analysis
