@@ -49,8 +49,20 @@ If you cannot find the container that you need, then you have to build it.
 However, learning how to build and maintain containers has a steep learning curve. 
 Therefore, we highly recommend to follow the VIB docker and apptainer course (https://training.vib.be/all-trainings/reproducible-data-analysis-0) if you want to know more about this topic. 
 
-
-
+#### Bonus (out of the scope of this course)
+```
+# How to build a container
+cd $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder
+git clone https://github.com/vib-bic-training/HPC_bioimage_analysis
+cd HPC_bioimage_analysis
+cd scripts
+# construct a container
+sbatch build_container_tier1.slurm
+# run the container in the job
+sbatch run_container_tier1.slurm
+```
+- if you want to know more about those topics, follow (https://training.vib.be/all-trainings/reproducible-data-analysis-0) and/or dedicated HPC training
+  
 ## 3. Workflow managers
 
 A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, in a scientific application (a reformuler). Scientific workflows are common in earth science, astronomy and bioIT.
