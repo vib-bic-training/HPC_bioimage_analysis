@@ -196,10 +196,13 @@ Schedule:
 Authors
 
 - [Benjamin Pavie](@[orcid](https://orcid.org/0000-0002-0249-3844)
+- [Tatiana Woller](@[orcid](https://orcid.org/0000-0002-6958-6498))
 
 Contributors
 
-- [Tatiana Woller](@[orcid](https://orcid.org/0000-0002-6958-6498))
+- Bruna Pierek
+- Janick Mathijs
+- Alex Botzki
 - [Sebastian Munck](@[orcid](https://orcid.org/0000-0002-5182-5358))
 
 ## Citing this lesson
