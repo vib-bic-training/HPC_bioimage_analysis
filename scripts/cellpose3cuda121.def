@@ -1,0 +1,33 @@
+Bootstrap: docker
+From: ubuntu:24.04
+
+%files
+
+%environment
+    export NUMBA_CACHE_DIR="$VSC_USER/numba_cache"
+    export CELLPOSE_LOCAL_MODELS_PATH="/dodrio/scratch/projects/2024_300/training/2025/cellpose_models"
+    CONDA_BIN_PATH="/opt/conda/bin"
+    export PATH="$CONDA_BIN_PATH:$PATH"
+
+%post
+   apt-get update -y
+   apt install -y build-essential wget bzip2 qtcreator libxcb-cursor0
+
+   # Install Miniconda
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh
+   bash /tmp/miniconda.sh -b -p /opt/conda
+   rm /tmp/miniconda.sh
+   export PATH="/opt/conda/bin:$PATH"
+
+   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+   conda create --yes --name cellpose python=3.10 -c conda-forge
+   /opt/conda/envs/cellpose/bin/pip install cellpose==3.1.1.2 torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+
+%runscript
+    exec /opt/conda/envs/cellpose/bin/"$@"
+
+%labels
+    Author Tatiana Woller
+    Version 1.0
+    Description Cellpose 3 with PyTorch 2.1.0 and CUDA 12.1 support and no GUI
