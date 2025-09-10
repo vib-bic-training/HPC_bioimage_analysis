@@ -109,8 +109,8 @@ How to choose:
 - demonstrate one example with cellpose and with small dataset
 - Here is how my pipeline is structured
 ```bash
-tree 03_modular_pipeline/
-03_modular_pipeline/
+tree 02_modular_pipeline/
+02_modular_pipeline/
 ├── bin
 │   ├── cellpose_seg_nextflow.py
 │   ├── convert_czi2ometiff.py
@@ -127,12 +127,9 @@ tree 03_modular_pipeline/
 ```
 - On HPC, there are different way to run it:
  ```bash
-# locally
+# using slurm 
 module load Nextflow
 nextflow run main.nf
-# using queue
-module load Nextflow
-nextflow run main.nf -profile vsc_ugent,tier1_custom
 ```
 - of course running nextflow on different cluster will have an incidence and it will lead to slight change in the configuration file.
 - show where the output is and explain how you can run it
