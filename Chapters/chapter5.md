@@ -58,6 +58,21 @@ Cellpose/2.2.2-foss-2022a
 | 2021b | 11.2.0 | - | 4.1.1 | 0.3.18 | 3.3.10 | 2.1.0-fb | 6.4.0  GCCcore 11.2.0| Python 3.9.6 |
 | 2021a | 10.3.0 | - | 4.1.1 | 0.3.15 | 3.3.9 | 2.1.0-fb |7.25.0 GCCcore 10.3.0 | Python 3.9.5 |
 
+4. Start a new session with pre-loaded modules using the following parameters
+
+- Cluster : `dodrio gpu_rome_a100`
+- Time : `1 hour`
+- Number of node : `1`
+- Number of Core : `8`
+- Number of GPU : `1`
+- Code server version : `4.103.2`
+- Working directory : `/dodrio/scratch/projects/2024_300`
+- Custom Code : 
+```bash
+module load matplotlib/3.5.2-foss-2022a
+module load Cellpose/2.2.2-foss-2022a
+```
+-	Reservation ID : `vib_bioimaging`
 
 ## Conda environments
 
