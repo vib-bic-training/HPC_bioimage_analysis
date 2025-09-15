@@ -1,10 +1,63 @@
-# Chapter 5 : Python and jupyter notebooks
+# Chapter 5 : Python and Notebooks
+
+## Why should I use this
+- Run Interactive Code
+- In a web browser (Chrome/Firefox/Safari/…)
+- Combine Code (Python), Text (Markdown) and Visualization in a single document
+- Ideal to explore Bio-Image Analysis
+- 3 flavors :
+
+| VSCode Server    | Jupyter | JupyterLab |
+| -------- | ------- | ------- |
+| <img width="90" height="90" alt="vs_code_server_logo" src="https://github.com/user-attachments/assets/deced641-5ab5-49c1-a001-053ec2ca9c11" /> | <img width="90" height="90" alt="jupyter_lab" src="https://github.com/user-attachments/assets/1be7e077-d664-4994-8fd4-760d270789f8" /> | <img width="88" height="107" alt="jupyter_notebook_logo" src="https://github.com/user-attachments/assets/b5d44681-c723-4bc7-9f7c-dd9b49e0e14b" /> |
+
+All 3 are available on Tier 1 via the On Demand interface
+
+<img width="354" height="423" alt="notebook_on_demand" src="https://github.com/user-attachments/assets/8e1e2bd2-5af5-4f92-89f3-586899ca4888" />
+
+
+In this tutorial, we will focus on **VS Code Server**
 
 ## Which infrastructure to use
+### Using pre-installed libraries
+- EasyBuidl Modules : if you can work with centrally installed softwares (modules), you can use either VS Code Server, Jupyter notebook or Jupyterlab.
+### Using custom libraries 
+In case, you need more specific python librairy, you can:
+- Use venv and use it with VS Code Server. In that case, you can mix **easybuild** modules **and** extra **pip** packages
+- Use conda : Install a miniconda and create your own conda environment with **conda** and/or **pip** packages
 
-If you can work with centrally installed softwares (modules) and you want to use jupyter notebooks, you can use either Jupyter notebook or Jupyterlab.
-In case, you need more specific python librairy, you can install a miniconda and create your own conda environment that can be used in Jupyter notebook or Jupyterlab.
-If you can work with only python scripts or you need to mix different languages, you can use vscode server. 
+## VS Code Server and EasyBuild Modules
+
+### Why VS Code Server
+- (VS)Code Server use the same interface as VSCode
+- EasyBuild Modules so you have nothing to install yourself (
+See [here](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter4.md) to search available modules).
+
+### Demo 
+In this demo, we will segment with Cellpose uisng the pre-installed module.
+
+1. Connect to the login node
+<img width="371" height="88" alt="terminal_01" src="https://github.com/user-attachments/assets/29059f95-e64e-4826-a499-86412cc4e17d" />
+
+2. In the terminal, search for the cellulose module and identify it
+<img width="852" height="78" alt="terminal_02" src="https://github.com/user-attachments/assets/2f77e166-aa0d-41d6-aa9b-a07b3bcc1e25" />
+
+```bash
+module spider Cellpose
+Cellpose/2.2.2-foss-2022a
+```
+3. Relate the module version with the right GCC
+
+| FOSS | GCC | CUDA | OpenMPI | OpenBLAS | FFTW | 
+| -----| --- | ---- |-------- |--------- |----- |
+| 2022b |12.2.0 | 12.0.0 | 4.1.4 | 0.3.21 | 3.3.10 |
+| **2022a** | **11.3.0** | 11.7.0 | 4.1.4 | 0.3.20 | 3.3.10 |
+| 2021b | 11.2.0 | - | 4.1.1 | 0.3.18 | 3.3.10 |
+| 2021a | 10.3.0 | - | 4.1.1 | 0.3.15 | 3.3.9 |
+| 2020b | 10.2.0 | - | 4.0.5 | 0.3.12 | 3.3.8 |
+| 2020a | 9.3.0 | - | 4.0.3 | 0.3.9 | 3.3.8 |
+| 2019b | 8.3.0 | - | 3.1.4 | 0.3.7 | 3.3.8 |
+
 
 ## Conda environments
 
