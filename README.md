@@ -132,13 +132,13 @@ Schedule:
 - 12:15/12:00 - Lunch
 - 13:15 - Napari plugins
 - 14:30 - Coffee break
-- 14:45 - Other software + intro notebook?
+- 14:45 - Other software + intro notebooks
 - 17:00 - End of the day
 
 - Day 2
 - 09:30 - Notebooks
 - 10:45 - Coffee Break
-- 11:00 - Containers and Worflows
+- 11:00 - SLURM, Containers and Worflows
 - 11:45 wrap up
 - 12:00 End of the day
 </section>
@@ -147,7 +147,7 @@ Schedule:
 
 > <i class="fa fa-lock"></i> **License:** [Creative Commons Attribution share alike 4.0 International  License](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 >
-> <i class="fa fa-user"></i> **Target Audience:** Researchers, biologis
+> <i class="fa fa-user"></i> **Target Audience:** Researchers, biologists
 >
 > <svg xmlns="http://www.w3.org/2000/svg" height="14" width="16" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M384 64c0-17.7 14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448v96c0 17.7-14.3 32-32 32H320v96c0 17.7-14.3 32-32 32H192v96c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V320c0-17.7 14.3-32 32-32h96V192c0-17.7 14.3-32 32-32h96V64z"/></svg> **Level:** Beginner  
 >
@@ -168,13 +168,17 @@ Schedule:
 >
 > 3. Using BANDs platform to access to several bioimage analysis tools such as Napari, QuPath etc...
 >
-> 4. Run some pipeline
+> 4. Use the easybuild module to run Jupyter notebook
 >
-> 5. Use the easybuild module to run Jupyter notebook
+> 5. Use venv and module to run Jupyter notebook
+>
+> 6. Have an overview with SLURM on how to submit jobs
+> 
+> 7. Understand the benefit of containarization and workflows
 >
 >> Check more about 
 >
-> <i class="fa fa-hourglass"></i> **Time estimation**: 360 minutes
+> <i class="fa fa-hourglass"></i> **Time estimation**: 520 minutes
 >
 > <i class="fa fa-asterisk"></i> **Requirements:** You need a [VSC account](https://www.vscentrum.be/getaccess) and a latop .
 >
