@@ -136,9 +136,9 @@ Schedule:
 - 17:00 - End of the day
 
 - Day 2
-- 09:30 - usage of notebooks
+- 09:30 - Notebooks
 - 10:45 - Coffee Break
-- 11:00 demo
+- 11:00 - Containers and Worflows
 - 11:45 wrap up
 - 12:00 End of the day
 </section>
