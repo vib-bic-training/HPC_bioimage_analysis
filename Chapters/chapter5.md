@@ -74,6 +74,59 @@ module load Cellpose/2.2.2-foss-2022a
 ```
 -	Reservation ID : `vib_bioimaging`
 
+<img width="896" height="366" alt="vs_code_server_01" src="https://github.com/user-attachments/assets/6e632676-7987-4741-b9fe-6b5730df0217" />
+
+5. Load the jupyter notebook
+Load the jupyter notebok located in `/dodrio/scratch/projects/2024_300/training/2025/notebooks/modules_cell_segmentation_cellpose.ipynb`
+<img width="477" height="236" alt="vs_code_server_02" src="https://github.com/user-attachments/assets/a30f474f-5f31-426c-8728-78608aaeeaff" />
+
+<img width="540" height="163" alt="vs_code_server_03" src="https://github.com/user-attachments/assets/dfcbd4b7-b56c-4fd9-a2ff-0680da7deb6e" />
+
+6. Save a copy in your folder
+
+Save it into your folder, e.g. `/dodrio/scratch/projects/2024_300/username`
+
+<img width="316" height="223" alt="vs_code_server_04" src="https://github.com/user-attachments/assets/a94b05c8-bffa-46f9-be25-38c773a00167" />
+
+<img width="541" height="85" alt="vs_code_server_05" src="https://github.com/user-attachments/assets/0f4a8121-3342-4e07-b735-fb461d1c48e9" />
+
+7. Open the Notebook, and display the Terminal
+
+<img width="601" height="107" alt="vs_code_server_06" src="https://github.com/user-attachments/assets/099fee31-90cf-47a5-8b38-1d787d9cf033" />
+
+<img width="544" height="205" alt="vs_code_server_07" src="https://github.com/user-attachments/assets/89b24bc3-063f-4abf-b97f-8e933c7cd58b" />
+
+8. Identify the current python in the terminal
+
+In the terminal, check the python version running
+```bash
+which python
+```
+<img width="550" height="134" alt="vs_code_server_08" src="https://github.com/user-attachments/assets/df5e9f1b-1048-4ebe-ad19-5438419d34c5" />
+
+9. Select the right Python
+Select the correct version of python, here `Python 3.10.4`
+
+<img width="871" height="171" alt="vs_code_server_09" src="https://github.com/user-attachments/assets/f035e991-1ff0-4495-b3d0-e401cbac8477" />
+
+<img width="607" height="140" alt="vs_code_server_10" src="https://github.com/user-attachments/assets/fa264032-5aa0-40c3-beb5-784cf88275d5" />
+
+<img width="471" height="374" alt="vs_code_server_11" src="https://github.com/user-attachments/assets/398b6eab-5ab4-4543-ac89-93f9b6386463" />
+
+9. Run the notebook cell by cell
+
+For it, put your mouse over the code block and click on the run button
+
+<img width="447" height="118" alt="vs_code_server_13" src="https://github.com/user-attachments/assets/fa84961f-71b4-4fcb-99ae-8db5d814edfb" />
+
+
+<img width="675" height="374" alt="vs_code_server_12" src="https://github.com/user-attachments/assets/52353f89-6457-4bd7-9b1b-394641fec85d" />
+
+
+
+
+
+
 ## Conda environments
 
 ### Miniconda3 installation
