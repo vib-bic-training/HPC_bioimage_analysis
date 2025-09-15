@@ -69,6 +69,7 @@ Cellpose/2.2.2-foss-2022a
 - Working directory : `/dodrio/scratch/projects/2024_300`
 - Custom Code : 
 ```bash
+module load AICSImageIO/4.14.0-foss-2022a
 module load matplotlib/3.5.2-foss-2022a
 module load Cellpose/2.2.2-foss-2022a
 ```
