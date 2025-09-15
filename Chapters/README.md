@@ -3,7 +3,7 @@
 
 Overview on how to process microscopy images with an HPC
 
-### Chapter 0 : [Installations](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter0.md)
+### Chapter 0 : [Setup](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter0.md)
 
 ### Chapter 1 : [Infrastructure](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter1.md)
 
