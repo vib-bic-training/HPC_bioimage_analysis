@@ -214,11 +214,31 @@ Now, your venv is available via the Jupyter notebook, let’s try it!
 > jupyter kernelspec remove training_2025
 > ```
 
+9. use the venv by starting a new Code Server Session
 
+<img width="408" height="323" alt="venv_03" src="https://github.com/user-attachments/assets/5c550f19-fe26-47a9-b04b-10c22bb12138" />
 
+<img width="435" height="323" alt="venv_04" src="https://github.com/user-attachments/assets/6aac6b5a-db3a-4b8d-93e0-c80ffc077c2b" />
 
+<img width="427" height="107" alt="venv_05" src="https://github.com/user-attachments/assets/4e273710-0077-4144-8ae6-4933dc29ef99" />
 
+<img width="928" height="322" alt="venv_06" src="https://github.com/user-attachments/assets/e1383649-3c22-4cf2-872e-d312d23bba26" />
 
+<img width="351" height="268" alt="venv_08" src="https://github.com/user-attachments/assets/d5069986-ba27-49e4-87a7-4d4907190cf3" />
+
+10. Open the Notebook
+
+Select the notebook `/dodrio/scratch/projects/2024_300/training/2025/notebooks/test_venv.ipynb`
+
+<img width="505" height="323" alt="venv_09" src="https://github.com/user-attachments/assets/991e148e-d2e6-462c-a48e-2d624af22feb" />
+
+11. Save a copy in your folder
+
+Save it into your folder, e.g. `/dodrio/scratch/projects/2024_300/username`
+
+<img width="316" height="223" alt="vs_code_server_04" src="https://github.com/user-attachments/assets/a94b05c8-bffa-46f9-be25-38c773a00167" />
+
+<img width="541" height="85" alt="vs_code_server_05" src="https://github.com/user-attachments/assets/0f4a8121-3342-4e07-b735-fb461d1c48e9" />
 ## Conda environments
 
 ### Miniconda3 installation
