@@ -1,5 +1,10 @@
 # Chapter 5 : Python and Notebooks
 
+The following notebooks are used:
+- https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/notebooks/modules_cell_segmentation_cellpose.ipynb
+- https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/notebooks/test_venv.ipynb
+You do not need to download unless you do not have an access to Tier1
+
 ## Why should I use this
 - Run Interactive Code
 - In a web browser (Chrome/Firefox/Safari/…)
