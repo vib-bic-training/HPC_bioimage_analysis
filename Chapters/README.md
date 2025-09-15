@@ -7,9 +7,9 @@ Overview on how to process microscopy images with an HPC
 
 ### Chapter 1 : [Infrastructure](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter1.md)
 
-### Chapter 2 : [Data Tranfer](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter2.md)
+### Chapter 2 : [Data Tranfer with Globus](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter2.md)
 
-### Chapter 3 : [BAND](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter3.md)
+### Chapter 3 : [BAND (BioImage ANalysis Desktop)](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter3.md)
 
 ### Chapter 4 : [Module (pre-installed software) with easybuild](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter4.md)
 
