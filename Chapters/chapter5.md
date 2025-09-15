@@ -250,6 +250,10 @@ Go on `Select Kernel` > `Jupyter kernel` > `train_2025`
 
 13. Run the Jupyter Notebook !
 
+### Others
+
+You can also install additional extension for `Git`, `Nextflow`, `Docker` by clicking on the extension icon (cube).
+
 
 ## Conda environments
 
@@ -332,29 +336,6 @@ python -m ipykernel install --user --name myenv --display-name myenvsDisplayName
 > ``` git clone any_repository```
 >
 
-## Venv environments
-
-venv will alow you to combine pip package with easybuild modules by first loading the Python Module (see [VSC doc](https://docs.vscentrum.be/compute/software/python_package_management.html))
-
-```
-# choose the right python version
-module load   Python/3.11.3-GCCcore-12.3.0
-module load  PyTorch/2.1.2-foss-2023a-CUDA-12.1.1
-module load torchvision/0.16.0-foss-2023a-CUDA-12.1.1
-module load matplotlib/3.7.2-gfbf-2023a
-module load scikit-image/0.22.0-foss-2023a
-# load vsc-venv
-module load vsc-venv
-python -m venv training_napari
-source training_napari/bin/activate
-pip install bioio bioio-czi bioio-ome-tiff pandas==2.0.3
-pip install cellpose==4.0.6
-pip install "napari[all]"
-pip install ipykernel
-python -m ipykernel install --user  --name bioio --display-name bioioczi 
-```
-
-
 ## Jupyter notebook
 ## How to start Jupyter notebook
 Go to [the Open On Demand portal](https://tier1.hpc.ugent.be/) and log in after multifactor-authentification
@@ -367,8 +348,6 @@ How to list existing kernels and how to remove them:
 !jupyter kernelspec list
 !jupyter kernelspec uninstall  pycudadecon -y
 ```
-
-
 Required modules:
 - `module load n2v/0.3.2-foss-2022a-CUDA-11.7.0`
 - `module load matplotlib/3.5.2-foss-2022a`
@@ -392,37 +371,7 @@ output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 > 
 
 ## Jupyterlab
-- not working properly with modules of 2022a and not loading napari modules
 
-## VSCode server
-The advantage of vscode is that you don't need to fix the python version in advance and you can also run other programming languages beside Python (i.e. Groovy, R, Julia, Rust, C/C#/C++).
-
-### How to start VSCode
-To start vscode, select code server (nb: on Tier2 KUL: it would be called vsc code server):
-![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_server_start.png)
-
-Then, select the right account, the right workdir and the appropriate queue with the amount of CPU and GPU (in this example, it is CPU only)
-![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_server_start_2.png)
-
-### How to start a terminal and set-up
-
-Here is how to open a terminal:
-![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_open_a_terminal.png)
-
-To change from folder, you can click on File > Open new folder
-
-Nota bene: you can also install additional extension for GIT, Nextflow and docker by clicking on the extension icon (cube).
-
-### How to run a jupyter notebook with a specific pre-build conda env
-
-To run a specific notebook with a specific python environment, open the python notebook and then select the kernel on the top right side and click on python environment.
-![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_select_kernel.png)
-
-You can either make a new environment or use an existing one:
-![image](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/how_to_select_env.png)
-
-Then you should be able to import your python librairies
-![images](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/images/vscode_check.png)
 
 
 ## Additional resources
