@@ -5,7 +5,7 @@
 
 ### Chapter 1 : Infrastructure
 
-### CHapter 2 : Data Tranfer
+### Chapter 2 : Data Tranfer
 
 ### Chapter 3 : BAND
 
