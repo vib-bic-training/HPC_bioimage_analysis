@@ -238,7 +238,19 @@ Save it into your folder, e.g. `/dodrio/scratch/projects/2024_300/username`
 
 <img width="316" height="223" alt="vs_code_server_04" src="https://github.com/user-attachments/assets/a94b05c8-bffa-46f9-be25-38c773a00167" />
 
-<img width="541" height="85" alt="vs_code_server_05" src="https://github.com/user-attachments/assets/0f4a8121-3342-4e07-b735-fb461d1c48e9" />
+<img width="548" height="297" alt="venv_10" src="https://github.com/user-attachments/assets/642e3c54-13ac-4f93-bf68-2b97218b9b58" />
+
+12. Select the right kernel
+
+Go on `Select Kernel` > `Jupyter kernel` > `train_2025`
+
+<img width="928" height="116" alt="venv_11" src="https://github.com/user-attachments/assets/97a463ce-f5ea-44b4-a73b-0de4bb551118" />
+
+<img width="508" height="191" alt="venv_12" src="https://github.com/user-attachments/assets/9a4fc504-db74-4427-8000-f33d998665ae" />
+
+13. Run the Jupyter Notebook !
+
+
 ## Conda environments
 
 ### Miniconda3 installation
