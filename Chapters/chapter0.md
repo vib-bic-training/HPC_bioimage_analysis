@@ -29,7 +29,7 @@ edition: 1st
 
 -->
 
-# Chapter0: Setup
+# Chapter0 : Setup
 
 Please read this page carefully **before** the start of the workshop.
 
