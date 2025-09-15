@@ -1,5 +1,5 @@
 
-# HPC BioImage ANalysis
+# HPC BioImage Analysis
 
 ### Chapter 0 : [Installations](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter0.md)
 
