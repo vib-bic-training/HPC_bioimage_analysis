@@ -25,7 +25,7 @@ Those problems can be partially solved using HPC, containers and workflow manage
 
 #### Introduction
 A container is way to pack your software so that it is isolated from the external world and can be used independently of the explotation system (unix, windows). 
-The advantage of a container is its reproducibility and it is less demanding for the system (check with Bruna). 
+The advantage of a container is its reproducibility across different infrastructures. 
 There exists plethora of containers but the most important are Docker and Apptainer. 
 Interestingly, there exist many avalaible free resource for containers for image analysis (EMBL, dockerhub (https://hub.docker.com/), wavecontainer (https://seqera.io/containers/), github) and BIC can share/help with containers for image analysis. 
 
@@ -65,7 +65,7 @@ sbatch run_container_tier1.slurm
   
 ## 3. Workflow managers
 
-A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, in a scientific application (a reformuler). Scientific workflows are common in earth science, astronomy and bioIT.
+A scientific workflow system is a specialized form of a workflow management system designed specifically to compose and execute a series of computational or data manipulation steps, or workflow, for scientific applications. Scientific workflows are common in earth science, astronomy and bioIT.
 They enable to link different building blocks (modules and subworkflows) together. Popular workflows managers are Galaxy, Nextflow and Snakemake. The most popular workflows currently are Nextflow and Snakemake. Nextflow is using Groovy (java-based), while Snakemake is using python. 
 
 ## Snakemake vs  Nextflow Comparison
