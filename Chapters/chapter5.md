@@ -392,17 +392,17 @@ output_folder = '/dodrio/scratch/projects/2024_300/<YOUR_NAME>/nv2' #TO CHANGE
 - Pipeline: https://github.com/BiaPyX/BiaPy
 ​- Super-resolution imaging: https://github.com/HenriquesLab/NanoPyx 
 
-### Napari notebooks: ​
+### Napari notebooks
 - https://github.com/BiAPoL/Bio-image_Analysis_with_Python
 - https://biapol.github.io/PoL-BioImage-Analysis-TS-GPU-Accelerated-Image-Analysis/intro.html
 - https://biapol.github.io/PoL-BioImage-Analysis-TS-Early-Career-Track/intro.html
 - https://github.com/FrancisCrickInstitute/cbias-napari
 
-#### BIC code
+### BIC code
 - notebooks: https://github.com/vib-bic-code/notebooks
 - conda environment: https://github.com/vib-bic-code/conda_environments
 
-### Bioimage model zoo :​
+### Bioimage model zoo
 - General one: ​ https://bioimage.io/#/​
 
 [previous chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter04.md) | [next chapter](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-bic-training/2024_Bioimaging_data_analysis_on_HPC/refs/heads/main/Chapters/Chapter06.md)
