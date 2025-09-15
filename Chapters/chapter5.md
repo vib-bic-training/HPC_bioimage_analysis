@@ -26,14 +26,14 @@ In case, you need more specific python librairy, you can:
 - Use venv and use it with VS Code Server. In that case, you can mix **easybuild** modules **and** extra **pip** packages
 - Use conda : Install a miniconda and create your own conda environment with **conda** and/or **pip** packages
 
-## VS Code Server and EasyBuild Modules
+## EasyBuild Modules & VS Code Server
 
 ### Why VS Code Server
 - (VS)Code Server use the same interface as VSCode
 - EasyBuild Modules so you have nothing to install yourself (
 See [here](https://github.com/vib-bic-training/HPC_bioimage_analysis/blob/main/Chapters/chapter4.md) to search available modules).
 
-### Demo 
+### Demo / hands-on
 In this demo, we will segment with Cellpose uisng the pre-installed module.
 
 1. Connect to the login node
@@ -120,8 +120,99 @@ For it, put your mouse over the code block and click on the run button
 
 <img width="447" height="118" alt="vs_code_server_13" src="https://github.com/user-attachments/assets/fa84961f-71b4-4fcb-99ae-8db5d814edfb" />
 
-
 <img width="675" height="374" alt="vs_code_server_12" src="https://github.com/user-attachments/assets/52353f89-6457-4bd7-9b1b-394641fec85d" />
+
+### Run linux command
+
+You can run a command by adding a `!` in front of it, e.g.
+
+```bash
+!pip install czifile
+```
+
+```bash
+!cp /dodrio/scratch/projects/2024_300/training/2024/devbio/*.tif /dodrio/scratch/users/vsc33625/
+```
+
+```bash
+!module list
+!module av | grep -i aicsimageio
+!module load AICSImageIO/4.14.0-foss-2022a
+```
+
+## venv & VS Code Server
+
+### Why 
+- venv is Built-in with Python:
+Part of the Python standard library, so it comes pre-installed with Python (Python 3.3 and newer).
+Create virtual environments using the command: python -m venv myenv.
+- Lightweight:
+Relatively lightweight and provides basic virtual environment functionality.
+Creates isolated Python environments with their own set of packages.
+- Package Manager:
+It uses pip as the package manager to install Python packages within the virtual environment.
+Can co-exist with EasyBuild Module
+- Notebooks:
+Compatible with Jupyter notebooks and VSCode server
+
+### Demo / hands-on
+
+1. Start a new terminal session : Shell (tmux)
+
+<img width="395" height="414" alt="venv_01" src="https://github.com/user-attachments/assets/dc63ba3a-5bb1-4a19-87ee-06462a52750e" />
+
+<img width="648" height="371" alt="venv_02" src="https://github.com/user-attachments/assets/df6c2ba0-098d-4513-99fe-f2d6ea2de767" />
+
+2. Build a new venv
+
+In the terminal, go to you $VSC_DATA and create a directory to store your venv
+```bash
+cd $VSC_DATA
+mkdir venv_collection
+cd venv_collection
+```
+
+3. Load the easybuild modules
+```bash
+module load vsc-venv
+module load matplotlib/3.9.2-gfbf-2024a
+```
+
+4. Create a venv named training_2025
+
+```bash
+python -m venv training_2025
+```
+It will create a new directory `$VSC_DATA/venv_collection/training_2025`
+
+5. Activate the venv
+```bash
+source training_2025/bin/activate
+```
+
+6. Install complementary pip packages
+```bash
+pip install bioio==2.0.0 bioio-czi bioio-ome-tiff
+pip install ipykernel stackview ipycanvas
+```
+
+7. Create a notebook kernel using the venv `training_2025` with a display name `train_2025`
+```bash
+python -m ipykernel install --user  --name training_2025 --display-name train_2025
+```
+
+8. Check you installed kernel
+```bash
+jupyter kernelspec list
+```
+Now, your venv is available via the Jupyter notebook, let’s try it!
+
+
+> [!TIP]
+> How remove a kernel :
+> ```bash
+> jupyter kernelspec remove training_2025
+> ```
 
 
 
