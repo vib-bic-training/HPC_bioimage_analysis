@@ -115,7 +115,6 @@ Welcome to our @workshop_name workshop! We are very happy to have you here.
 
 This is the @workshop_edition edition of this workshop, jointly organised by the VIB Bioimaging Core, Leuven, BE with the help of the VSC
 
-- The session (10 October 2024) is dedicated to .
 
 The **presentation** which goes alongside this material can be found [here](https://docs.google.com/presentation/d/1LVv2gwd0vwWmAoey-QeU2LNWvFkN3FDSE06BHhWusOs/edit?usp=sharing).
 
