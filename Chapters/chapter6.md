@@ -32,9 +32,9 @@ Interestingly, there exist many avalaible free resource for containers for image
 #### Small demo on prebuild containers
 - How to run cellpose from an available container on dockerhub
 ```
-export APPTAINER_TMPDIR=$VSC_SCRATCH/apptainer_tmp
+export APPTAINER_TMPDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/apptainer_tmp
 mkdir -p $APPTAINER_TMPDIR
-export APPTAINER_CACHEDIR=$VSC_SCRATCH/apptainer_cache
+export APPTAINER_CACHEDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolderapptainer_cache
 mkdir -p $APPTAINER_CACHEDIR
 apptainer pull docker://biocontainers/cellpose:3.1.0_cv1
 ```
