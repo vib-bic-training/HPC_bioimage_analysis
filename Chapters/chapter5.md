@@ -75,6 +75,7 @@ Cellpose/2.2.2-foss-2022a
 - Working directory : `/dodrio/scratch/projects/2024_300`
 - Custom Code : 
 ```bash
+module load JupyterNotebook/6.4.0-GCCcore-11.3.0-IPython-8.5.0
 module load AICSImageIO/4.14.0-foss-2022a
 module load matplotlib/3.5.2-foss-2022a
 module load Cellpose/2.2.2-foss-2022a
