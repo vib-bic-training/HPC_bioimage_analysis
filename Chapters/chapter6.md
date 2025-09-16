@@ -1,7 +1,7 @@
 # Chapter 6: Bioimaging meets Bioinformatics
 
 ##  Theory (Discuss the concept of workflow, reproducibility issue with user)
-### 1. Reproducibility and scalability
+### 0. Reproducibility and scalability
 Given the constant technology evolution, bioimage analysts are confronted complexer, bigger data whose analysis rely on ML and require important computational ressource. 
 In addition, interdisciplinar fields such spacial omics or multiomics are gaining importance and tools from Bioinformatics can be used to tackle problems in Bioimaging.
 Common problem in Bioinformatics and Bioimaging are: 
@@ -19,6 +19,44 @@ Those problems can be partially solved using HPC, containers and workflow manage
 | **🔧 User experience** | ❌ **Complex** <br/>Requires expertise <br/>Build time intensive | ✅ **Good** <br/>if you have the right version  | ⚠️ **Good**<br/>Nice as long as you don't need GPU|
 | **🚀 Portability** | ✅ **Excellent** <br/>Works anywhere <br/>OS independent | ⚠️ **Moderate** <br/>HPC-specific <br/>Architecture dependent | ❌ **Limited**<br/>Cross-platform <br/>Some package conflicts |
 | **💾 Resource Usage** | ❌ **Heavy** <br/>Large image sizes <br/>Duplicate dependencies | ⚠️ **Moderate** <br/>Optimized builds <br/>Shared libraries | ✅ **Lightweight** <br/>Small environments <br/>Efficient storage |
+
+### 1. Slurm jobs
+
+Slurm stands for Simple Linux Utility for Resource Management and is a workload manager.
+Basically, Slurm takes care of the following task: 
+- Manage and allocate cluster resources
+- Allocate resources to users for jobs
+- Starts and monitors work
+- Manages a queue of pending jobs
+
+- Here is an example of a gpu job (where you will select the appropriate partition, amount of cpu, gpus, time and memory, load some env variable of load some modules)
+
+```bash
+#!/bin/bash
+#SBATCH -A 2024_300
+#SBATCH --partition=gpu_rome_a100_40
+#SBATCH --nodes="1"
+#SBATCH --ntasks-per-node="1"
+#SBATCH --cpus-per-task=8
+#SBATCH --mem-per-cpu=1g
+#SBATCH --gpus-per-task=1
+#SBATCH --output=cellpose3.out
+#SBATCH --error=cellpose3.err
+#SBATCH --time=00:30:00
+
+export APPTAINER_TMPDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/containers/.apptainer/tmp
+export APPTAINER_CACHEDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/containers/.apptainer/cache
+ 
+apptainer run --nv cellpose3.sif cellpose --image_path ../training/2024/cellpose/hdab_fat_cells_2d.tif --pretrained_model cyto3 --gpu
+
+```
+- to launch a jon ```sbatch  my_job.slurm```
+- to cancel a job: ``` scancel jobid```
+- to monitor a job: ```slurm_jobinfo 9176837```
+- to see the efficiency of a finished jobs: ```sacct -j jobid --format=jobid,jobname,reqcpus,reqmem,averss,maxrss,elapsed,state%20,exitcode --unit=M```
+- you can also use job dependency so one job waits for the previous job to be finished(https://docs.vscentrum.be/compute/jobs/job_submission.html#specifying-dependencies)
+- or do some parameters search through job arrays: https://docs.vscentrum.be/compute/jobs/job_types.html#job-arrays-and-parameter-exploration
+
 
 
 ### 2. Containers
