@@ -264,7 +264,7 @@ The resources and services used in this training were provided by the VSC (Flemi
 --------------------------------------------
 
 *Editorial team for this course*
-Authors: @[orcid(Benjamin Pavie)]([https://orcid.org/0000-0001-6691-4233](https://orcid.org/0000-0002-0249-3844)), @[orcid(Tatian Woller)]([https://orcid.org/0000-0002-6958-6498](https://orcid.org/0000-0002-6958-6498))
+Authors: @[orcid(Benjamin Pavie)]([https://orcid.org/0000-0001-6691-4233](https://orcid.org/0000-0002-0249-3844)), @[orcid(Tatiana Woller)]([https://orcid.org/0000-0002-6958-6498](https://orcid.org/0000-0002-6958-6498))
 
 License: [![CC BY SA](img/picture003.jpg)](https://creativecommons.org/licenses/by-sa/4.0/deed.en)
 
