@@ -86,6 +86,11 @@ apptainer run cellpose_3.1.0_cv1.sif cellpose --image_path ../training/2024/cell
 If you cannot find the container that you need, then you have to build it.
 However, learning how to build and maintain containers has a steep learning curve. 
 Therefore, we highly recommend to follow the VIB docker and apptainer course (https://training.vib.be/all-trainings/reproducible-data-analysis-0) if you want to know more about this topic. 
+```
+cd training/2025/containers_gui
+apptainer exec cellpose4_cuda121.sif cellpose --help
+apptainer run cellpose4_cuda121.sif cellpose --Zstack
+```
 
 #### Bonus (out of the scope of this course)
 ```
