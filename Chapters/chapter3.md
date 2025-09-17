@@ -509,6 +509,16 @@ This will save the result into the input directory.
 > [!WARNING]
 > As you may have noticed, on a small screen, since cellpose version 2.2 is not resizable with a scrollbar, it is sometimes not possible to view the scrollbar to change the Z position.
 
+#### Cellpose SAM
+
+- open a terminal
+  ```bash
+          cd $VSC_SCRATCH
+          # open the file
+          vi set_cellpose_env.sh
+          # paste this line in your file
+          export CELLPOSE_LOCAL_MODELS_PATH="/dodrio/scratch/projects/2024_300/training/2025/cellpose_models"
+  ```
 
 > [!TIP]
 > Alternativelly, you can start it via the terminal `Applications › Terminal Emulator`
