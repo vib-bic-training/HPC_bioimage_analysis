@@ -3,7 +3,7 @@
 ## Cloning the repository
 
 ```
-cd $VSC_DATA
+cd $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder
 git clone https://github.com/vib-bic-training/HPC_bioimage_analysis/tree/main
 ```
 
