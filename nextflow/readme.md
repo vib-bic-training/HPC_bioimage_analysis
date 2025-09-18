@@ -14,16 +14,14 @@ cd HPC_bioimage_analysis/scripts
 # change the script to build the container
 vi build_container_tier1.slurm
 sbatch build_container_tier1.slurm
-# change the script to run the container
-sbatch run_container_tier1.slurm
 ```
 
 ## how to run
 ```
 cd HPC_bioimage_analysis/nextflow
-# adapt the configuration file
+# check the configuration file
 vi nextflow.config
 chmod +x bin/*.py
 module load Nextflow
-nextflow run main.nf -profile vsc_ugent
+nextflow run main.nf 
 ```
