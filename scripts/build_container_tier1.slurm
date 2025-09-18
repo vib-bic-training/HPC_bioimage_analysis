@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=build-apptainer
 #SBATCH --ntasks=1
-#SBATCH --partition=debug_rome
+#SBATCH --partition=gpu_rome_a100_40
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
 #SBATCH --time=00:30:00
