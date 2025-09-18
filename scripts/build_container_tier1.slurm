@@ -5,21 +5,14 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --gpus-per-node=1
 #SBATCH --time=00:30:00
+#SBATCH --reservation=vib_bioimaging
 #SBATCH --output=build1_apptainer.stdout
 #SBATCH --error=build1_apptainer.stderr
 #SBATCH --account=2024_300
 
-cd /tmp
-chmod a+rwx .
 # change the path
-cp $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/HPC_bioimage_analysis/cellpose4.def /tmp/cellpose4.def
-
-
-export APPTAINER_CACHEDIR=/tmp/.apptainer/cache
+export APPTAINER_CACHEDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/.apptainer/cache
 mkdir -p $APPTAINER_CACHEDIR
-export APPTAINER_TMPDIR=/tmp/.apptainer/tmp
+export APPTAINER_TMPDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/.apptainer/tmp
 mkdir -p $APPTAINER_TMPDIR
-apptainer build --nv cellpose4.sif cellpose4.def
-
-# change the path
-mv /tmp/cellpose3.sif $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/HPC_bioimage_analysis/
+apptainer build cellpose4.sif cellpose4.def
