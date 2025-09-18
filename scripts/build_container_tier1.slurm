@@ -11,13 +11,15 @@
 
 cd /tmp
 chmod a+rwx .
-cp $VSC_SCRATCH_PROJECTS_BASE/2024_300/twoller/containers/cellpose3cuda121.def /tmp/cellpose3cuda121.def
+# change the path
+cp $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/containers/cellpose4.def /tmp/cellpose4.def
 
 
 export APPTAINER_CACHEDIR=/tmp/.apptainer/cache
 mkdir -p $APPTAINER_CACHEDIR
 export APPTAINER_TMPDIR=/tmp/.apptainer/tmp
 mkdir -p $APPTAINER_TMPDIR
-apptainer build --nv cellpose3.sif cellpose3cuda121.def
+apptainer build --nv cellpose4.sif cellpose4.def
 
+# change the path
 mv /tmp/cellpose3.sif $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/containers/
