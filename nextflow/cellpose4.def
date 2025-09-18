@@ -19,6 +19,8 @@ From: ubuntu:24.04
    rm /tmp/miniconda.sh
    export PATH="/opt/conda/bin:$PATH"
 
+   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
    conda create --yes --name cellpose python=3.10
    /opt/conda/envs/cellpose/bin/pip install cellpose torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu118
 
