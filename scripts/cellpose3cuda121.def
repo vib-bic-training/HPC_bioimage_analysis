@@ -4,8 +4,21 @@ From: ubuntu:24.04
 %files
 
 %environment
-    export NUMBA_CACHE_DIR="$VSC_USER/numba_cache"
-    export CELLPOSE_LOCAL_MODELS_PATH="/dodrio/scratch/projects/2024_300/training/2025/cellpose_models"
+    export NUMBA_CACHE_DIR="/tmp/$USER/numba_cache"
+
+    SET_CELLPOSE_ENV=~/set_cellpose_env.sh
+    if [ -f ${SET_CELLPOSE_ENV} ]; then
+        echo "sourcing ${SET_CELLPOSE_ENV}..."
+        source ${SET_CELLPOSE_ENV}
+    else
+        echo "WARNING: ${SET_CELLPOSE_ENV} script not found"
+    fi
+    if [ -z "${CELLPOSE_LOCAL_MODELS_PATH}" ]; then
+      echo "\$CELLPOSE_LOCAL_MODELS_PATH not defined, sticking to default (\$HOME/.cellpose/models) -- NOT RECOMMENDED"
+    else
+      echo "\$CELLPOSE_LOCAL_MODELS_PATH is defined: ${CELLPOSE_LOCAL_MODELS_PATH}"
+    fi
+    
     CONDA_BIN_PATH="/opt/conda/bin"
     export PATH="$CONDA_BIN_PATH:$PATH"
 
@@ -20,9 +33,9 @@ From: ubuntu:24.04
    export PATH="/opt/conda/bin:$PATH"
 
    conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
-   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+   conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r 
    conda create --yes --name cellpose python=3.10 -c conda-forge
-   /opt/conda/envs/cellpose/bin/pip install cellpose==3.1.1.2 torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
+   /opt/conda/envs/cellpose/bin/pip install cellpose[gui]==3.1.1.2 torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu121
 
 %runscript
     exec /opt/conda/envs/cellpose/bin/"$@"
@@ -30,4 +43,5 @@ From: ubuntu:24.04
 %labels
     Author Tatiana Woller
     Version 1.0
-    Description Cellpose 3 with PyTorch 2.1.0 and CUDA 12.1 support and no GUI
+    Description Cellpose 3 with PyTorch 2.1.0 and CUDA 12.1 support
+
