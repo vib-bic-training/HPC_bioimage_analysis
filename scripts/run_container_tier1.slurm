@@ -6,8 +6,8 @@
 #SBATCH --ntasks-per-node="1"
 #SBATCH --cpus-per-task=8
 #SBATCH --gpus-per-task=1
-#SBATCH --output=cellpose3.out
-#SBATCH --error=cellpose3.err
+#SBATCH --output=cellpose4.out
+#SBATCH --error=cellpose4.err
 #SBATCH --time=00:30:00
 
 # change path
