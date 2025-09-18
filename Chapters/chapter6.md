@@ -152,8 +152,8 @@ How to choose:
 - demonstrate one example with cellpose and with small dataset
 - Here is how my pipeline is structured
 ```bash
-tree 02_modular_pipeline/
-02_modular_pipeline/
+tree nextflow/
+nextflow
 ├── bin
 │   ├── cellpose_seg_nextflow.py
 │   ├── convert_czi2ometiff.py
