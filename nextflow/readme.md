@@ -4,7 +4,7 @@
 
 ```
 cd $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder
-git clone https://github.com/vib-bic-training/HPC_bioimage_analysis/tree/main
+git clone https://github.com/vib-bic-training/HPC_bioimage_analysis.git
 ```
 
 ## Building the container
