@@ -7,7 +7,7 @@ cd $VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder
 git clone https://github.com/vib-bic-training/HPC_bioimage_analysis.git
 ```
 
-## Building the container
+## Building the container (facultative)
 
 ```
 cd HPC_bioimage_analysis/scripts
@@ -24,4 +24,10 @@ vi nextflow.config
 chmod +x bin/*.py
 module load Nextflow
 nextflow run main.nf 
+```
+
+## how to check the results
+
+```
+ls  HPC_bioimage_analysis/nextflow/results/*/*
 ```
