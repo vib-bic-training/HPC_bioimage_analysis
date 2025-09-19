@@ -11,8 +11,8 @@
 #SBATCH --account=2024_300
 
 # change the path
-export APPTAINER_CACHEDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/.apptainer/cache
+export APPTAINER_CACHEDIR=/tmp/.apptainer/cache
 mkdir -p $APPTAINER_CACHEDIR
-export APPTAINER_TMPDIR=$VSC_SCRATCH_PROJECTS_BASE/2024_300/yourfolder/.apptainer/tmp
+export APPTAINER_TMPDIR=/tmp/.apptainer/tmp
 mkdir -p $APPTAINER_TMPDIR
-apptainer build cellpose4.sif cellpose4.def
+apptainer build metrics.sif metrics.def
