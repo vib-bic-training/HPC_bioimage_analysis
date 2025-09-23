@@ -14,7 +14,7 @@ Those problems can be partially solved using HPC, containers and workflow manage
 
 | Aspect | 🐳 **Containers** | 🏗️ **Modules** | 🐍 **Conda** |
 |--------|------------------|------------------|---------------|
-| **📦 Reproducibility** | ✅ **Excellent** <br/>Complete system isolation <br/>Same everywhere | ✅ **Very Good** <br/>Version-controlled builds <br/>Dependency tracking | ⚠️ **Good** <br/>Environment files <br/>Platform differences |
+| **📦 Reproducibility** | ✅ **Excellent** <br/>Complete system isolation <br/>Same everywhere | ✅ **Very Good** <br/>Version-controlled builds <br/>Dependency tracking | ⚠️ **Moderate** <br/>Environment files <br/>Platform differences |
 | **⚡ Performance** | ⚠️ **Moderate** <br/>Container runtime cost <br/>I/O can be slower | ✅ **Native** <br/>Optimized builds <br/>No virtualization overhead | ⚠️ **Moderate** <br/>Direct execution <br/>Minimal overhead |
 | **🔧 User experience** | ❌ **Complex** <br/>Requires expertise <br/>Build time intensive | ✅ **Good** <br/>if you have the right version  | ⚠️ **Good**<br/>Nice as long as you don't need GPU|
 | **🚀 Portability** | ✅ **Excellent** <br/>Works anywhere <br/>OS independent | ⚠️ **Moderate** <br/>HPC-specific <br/>Architecture dependent | ❌ **Limited**<br/>Cross-platform <br/>Some package conflicts |
